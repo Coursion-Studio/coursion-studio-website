@@ -1446,10 +1446,31 @@ footer a:hover { color: var(--text-primary); }
 }
 
 .tile-foot p {
-  margin: 0;
+  margin: 0 0 12px;
   font-size: 13.5px;
   line-height: 1.5;
   color: rgba(255,255,255,0.82);
+}
+
+.tile-cta {
+  display: inline-block;
+  margin-top: 4px;
+  font-size: 12.5px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  color: #fff;
+  padding: 7px 12px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.14);
+  border: 1px solid rgba(255,255,255,0.22);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.app-tile:hover .tile-cta {
+  background: rgba(255,255,255,0.22);
+  transform: translateX(2px);
 }
 
 @media (max-width: 640px) {
