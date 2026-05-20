@@ -1473,6 +1473,14 @@ footer a:hover { color: var(--text-primary); }
   transform: translateX(2px);
 }
 
+.tile-cta.soon {
+  background: rgba(251,191,36,0.18);
+  border-color: rgba(251,191,36,0.4);
+  color: #FCD34D;
+}
+.app-tile:hover .tile-cta.soon { background: rgba(251,191,36,0.18); transform: none; }
+.app-tile[aria-disabled="true"] { cursor: default; }
+
 @media (max-width: 640px) {
   .deck-grid { grid-template-columns: 1fr; }
   .app-tile { min-height: 280px; }
