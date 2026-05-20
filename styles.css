@@ -1215,26 +1215,38 @@ footer a:hover { color: var(--text-primary); }
   margin: 0;
 }
 
-/* ─── Coursion: iPhone mockup for iOS showcase rows ─── */
+/* ─── Coursion: iOS showcase rows — balanced compact column ─── */
+
+/* iOS rows: make figure column smaller so it doesn't dominate copy */
+.showcase-row.ios-row { grid-template-columns: minmax(0, 6fr) minmax(0, 5fr); gap: 48px; }
+.showcase-row.ios-row.reverse { grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); }
+
 .ios-stage {
   margin: 0;
   padding: 0;
-  border: 0;
-  background: transparent;
+  border: 1px solid rgba(255,255,255,0.08);
+  background: var(--ios-card-bg, linear-gradient(160deg, rgba(255,255,255,0.04), rgba(255,255,255,0.015)));
   position: relative;
-  aspect-ratio: 16 / 11;
+  aspect-ratio: 1 / 1;
+  max-width: 380px;
+  margin-inline: auto;
   display: grid;
   place-items: center;
+  align-content: center;
+  gap: 18px;
   overflow: hidden;
-  border-radius: 24px;
+  border-radius: 28px;
+  box-shadow:
+    0 30px 60px rgba(0,0,0,0.45),
+    0 0 0 1px rgba(255,255,255,0.04),
+    0 0 80px var(--ios-glow, rgba(140,90,240,0.18));
 }
 
 .ios-stage::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: var(--ios-bg, radial-gradient(ellipse at 50% 40%, rgba(120,80,220,0.35), transparent 60%));
-  filter: blur(40px);
+  background: var(--ios-bg, radial-gradient(ellipse at 50% 50%, rgba(140,90,240,0.30), transparent 65%));
   z-index: 0;
 }
 
@@ -1249,119 +1261,48 @@ footer a:hover { color: var(--text-primary); }
   z-index: 0;
 }
 
-.phone {
+.ios-stage .app-icon {
   position: relative;
   z-index: 1;
-  width: 244px;
-  aspect-ratio: 9 / 19;
-  background: linear-gradient(160deg, #1a1530, #0a0816);
-  border-radius: 42px;
-  padding: 10px;
+  width: 132px;
+  height: 132px;
+  border-radius: 30px;
   box-shadow:
-    0 40px 80px rgba(0, 0, 0, 0.55),
-    0 8px 24px rgba(0, 0, 0, 0.4),
-    inset 0 0 0 1.5px rgba(255, 255, 255, 0.08),
-    inset 0 0 0 3px rgba(0, 0, 0, 0.5),
-    0 0 60px var(--phone-glow, rgba(140, 90, 240, 0.35));
-  transform: perspective(1400px) rotateY(-4deg) rotateX(2deg);
-  transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
-}
-
-.showcase-row.reverse .phone {
-  transform: perspective(1400px) rotateY(4deg) rotateX(2deg);
-}
-
-.phone:hover { transform: perspective(1400px) rotateY(0) rotateX(0) translateY(-6px); }
-
-.phone .screen {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  border-radius: 32px;
-  background: var(--phone-bg, linear-gradient(160deg, #312E81, #1E1B4B));
-  overflow: hidden;
-  display: grid;
-  place-items: center;
-  align-content: center;
-  gap: 18px;
-  padding: 24px;
-  text-align: center;
-}
-
-.phone .screen::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 50%;
-  transform: translateX(-50%);
-  width: 92px;
-  height: 24px;
-  background: #000;
-  border-radius: 0 0 14px 14px;
-  z-index: 2;
-}
-
-.phone .screen::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background:
-    radial-gradient(circle at 20% 15%, rgba(255,255,255,0.16), transparent 45%),
-    radial-gradient(circle at 80% 90%, rgba(0,0,0,0.3), transparent 55%);
-  pointer-events: none;
-}
-
-.phone .app-icon {
-  width: 108px;
-  height: 108px;
-  border-radius: 26px;
-  box-shadow:
-    0 16px 32px rgba(0, 0, 0, 0.5),
-    inset 0 0 0 1px rgba(255, 255, 255, 0.12);
+    0 18px 40px rgba(0,0,0,0.55),
+    inset 0 0 0 1px rgba(255,255,255,0.10);
   object-fit: cover;
-  position: relative;
-  z-index: 1;
+  transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
-.phone .app-name {
+.ios-stage:hover .app-icon { transform: translateY(-4px) scale(1.04); }
+
+.ios-stage .app-name {
   position: relative;
   z-index: 1;
-  font-size: 18px;
-  font-weight: 700;
+  font-size: 17px;
+  font-weight: 600;
   letter-spacing: -0.01em;
   color: #fff;
-  text-shadow: 0 1px 6px rgba(0,0,0,0.4);
+  text-shadow: 0 1px 8px rgba(0,0,0,0.5);
 }
 
-.phone .app-tag {
+.ios-stage .app-tag {
   position: relative;
   z-index: 1;
-  font-size: 11.5px;
+  font-size: 12px;
   font-weight: 500;
-  color: rgba(255, 255, 255, 0.72);
+  color: rgba(255,255,255,0.62);
   letter-spacing: 0.2px;
-  max-width: 180px;
-  line-height: 1.35;
-}
-
-.phone .home-indicator {
-  position: absolute;
-  bottom: 8px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 90px;
-  height: 4px;
-  border-radius: 4px;
-  background: rgba(255, 255, 255, 0.55);
-  z-index: 3;
+  padding: 0 24px;
+  text-align: center;
+  margin-top: -8px;
 }
 
 @media (max-width: 860px) {
-  .phone { width: 220px; }
-  .ios-stage { aspect-ratio: 1 / 1; }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .phone, .phone:hover, .showcase-row.reverse .phone { transform: none; }
+  .showcase-row.ios-row,
+  .showcase-row.ios-row.reverse { grid-template-columns: 1fr; }
+  .ios-stage { max-width: 280px; }
+  .ios-stage .app-icon { width: 108px; height: 108px; }
 }
 
 /* ─── Coursion: mobile lineup grid ─── */
