@@ -1,9 +1,9 @@
-/* ─── Knack landing — theme mirrors Sources/Knack/Theme.swift ─── */
+/* ─── Coursion Studio landing ─── */
 
 :root {
-  --bg-top:    #0E1224;
-  --bg-mid:    #131530;
-  --bg-bottom: #170F31;
+  --bg-top:    #07091A;
+  --bg-mid:    #0B0E26;
+  --bg-bottom: #140B30;
 
   --text-primary:   #ffffff;
   --text-secondary: rgba(255, 255, 255, 0.58);
@@ -49,15 +49,48 @@ html, body {
   position: fixed;
   inset: 0;
   z-index: -1;
+  overflow: hidden;
   background:
-    radial-gradient(circle at 5% 0%,
-      rgba(140, 77, 242, 0.22), transparent 52%),
-    radial-gradient(circle at 100% 100%,
-      rgba(255, 77, 140, 0.18), transparent 56%),
-    radial-gradient(circle at 100% 20%,
-      rgba(51, 141, 255, 0.12), transparent 46%),
-    linear-gradient(135deg,
-      var(--bg-top) 0%, var(--bg-mid) 50%, var(--bg-bottom) 100%);
+    radial-gradient(ellipse 50% 40% at 8% 6%,    rgba(168, 85, 247, 0.32), transparent 60%),
+    radial-gradient(ellipse 45% 35% at 92% 14%,  rgba(56, 158, 255, 0.26), transparent 60%),
+    radial-gradient(ellipse 55% 45% at 50% 48%,  rgba(199, 92, 235, 0.18), transparent 65%),
+    radial-gradient(ellipse 60% 45% at 12% 90%,  rgba(255, 82, 140, 0.22), transparent 60%),
+    radial-gradient(ellipse 55% 40% at 95% 95%,  rgba(20, 184, 166, 0.16), transparent 60%),
+    linear-gradient(160deg,
+      var(--bg-top) 0%, var(--bg-mid) 45%, var(--bg-bottom) 100%);
+}
+
+.bg::before {
+  content: "";
+  position: absolute;
+  inset: -20%;
+  background:
+    radial-gradient(circle at 30% 30%, rgba(99, 102, 241, 0.10), transparent 40%),
+    radial-gradient(circle at 70% 70%, rgba(244, 114, 182, 0.10), transparent 40%);
+  filter: blur(60px);
+  opacity: 0.7;
+  animation: bgDrift 28s ease-in-out infinite alternate;
+}
+
+.bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+  background-size: 3px 3px;
+  opacity: 0.5;
+  mix-blend-mode: overlay;
+  pointer-events: none;
+}
+
+@keyframes bgDrift {
+  0%   { transform: translate3d(0, 0, 0) scale(1); }
+  100% { transform: translate3d(-4%, 3%, 0) scale(1.08); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bg::before { animation: none; }
 }
 
 /* ─── layout ─── */
@@ -804,4 +837,179 @@ footer a:hover { color: var(--text-primary); }
 
 .prose a:hover {
   text-decoration-color: var(--brand-pink);
+}
+
+/* ─── Coursion: brand mark in nav ─── */
+.brand-mark {
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  background: var(--brand-gradient-diag);
+  box-shadow:
+    0 6px 18px rgba(199, 92, 235, 0.35),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.18);
+  display: grid;
+  place-items: center;
+  color: #fff;
+  font-weight: 800;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+}
+
+/* ─── Coursion: hero mosaic (visual replacement for product screenshot) ─── */
+.hero-mosaic {
+  margin: 56px auto 0;
+  max-width: 780px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  perspective: 1400px;
+}
+
+.hero-mosaic .m-tile {
+  aspect-ratio: 1 / 1;
+  border-radius: 22px;
+  background: var(--m-bg, linear-gradient(135deg, #C084FC, #6366F1));
+  display: grid;
+  place-items: center;
+  color: #fff;
+  box-shadow:
+    0 14px 36px var(--m-glow, rgba(99, 102, 241, 0.45)),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.14),
+    inset 0 -10px 24px rgba(0, 0, 0, 0.18);
+  transform: rotate(var(--m-rot, 0deg)) translateY(var(--m-y, 0));
+  transition: transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.5s ease;
+  animation: floaty 8s ease-in-out infinite alternate;
+  animation-delay: var(--m-delay, 0s);
+}
+
+.hero-mosaic .m-tile:hover {
+  transform: rotate(0deg) translateY(-6px) scale(1.04);
+}
+
+.hero-mosaic .m-tile svg {
+  width: 44%;
+  height: 44%;
+  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.35));
+}
+
+@keyframes floaty {
+  0%   { translate: 0 0; }
+  100% { translate: 0 -6px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-mosaic .m-tile { animation: none; }
+}
+
+@media (max-width: 640px) {
+  .hero-mosaic { grid-template-columns: repeat(4, 1fr); gap: 8px; }
+}
+
+/* ─── Coursion: product card refinements ─── */
+.card.product {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+  min-height: 180px;
+}
+
+.card.product .platform {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 4px 9px;
+  border-radius: 999px;
+  color: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+.card.product .platform.mac { color: #C4B5FD; }
+.card.product .platform.ios { color: #FBCFE8; }
+.card.product .platform.web { color: #99F6E4; }
+
+.card.product .status {
+  display: inline-block;
+  margin-top: 14px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.card.product[data-soon="true"] .status::before {
+  content: "•";
+  color: #FBBF24;
+  margin-right: 6px;
+}
+
+.card.product:not([data-soon="true"]) .status {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.card.product:not([data-soon="true"]) .status::after {
+  content: " →";
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.card.product:not([data-soon="true"]):hover .status::after {
+  transform: translateX(3px);
+}
+
+/* ─── Coursion: principles (numbered rows, not cards) ─── */
+.principles {
+  display: grid;
+  gap: 4px;
+  margin-top: 8px;
+  border-top: 1px solid var(--card-stroke);
+}
+
+.principle {
+  display: grid;
+  grid-template-columns: 64px 1fr;
+  align-items: baseline;
+  gap: 24px;
+  padding: 28px 4px;
+  border-bottom: 1px solid var(--card-stroke);
+  transition: background 0.2s ease;
+}
+
+.principle:hover { background: rgba(255, 255, 255, 0.02); }
+
+.principle .num {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  background: var(--brand-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-variant-numeric: tabular-nums;
+}
+
+.principle .body h3 {
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  margin: 0 0 8px;
+}
+
+.principle .body p {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 15.5px;
+  line-height: 1.6;
+  max-width: 640px;
+}
+
+@media (max-width: 640px) {
+  .principle { grid-template-columns: 40px 1fr; gap: 16px; padding: 22px 4px; }
+  .principle .body h3 { font-size: 18px; }
 }
