@@ -841,19 +841,24 @@ footer a:hover { color: var(--text-primary); }
 
 /* ─── Coursion: brand mark in nav ─── */
 .brand-mark {
-  width: 28px;
-  height: 28px;
+  width: 32px;
+  height: 32px;
   border-radius: 8px;
-  background: var(--brand-gradient-diag);
-  box-shadow:
-    0 6px 18px rgba(199, 92, 235, 0.35),
-    inset 0 0 0 1px rgba(255, 255, 255, 0.18);
-  display: grid;
-  place-items: center;
-  color: #fff;
-  font-weight: 800;
-  font-size: 14px;
-  letter-spacing: -0.02em;
+  object-fit: cover;
+  display: block;
+  filter: drop-shadow(0 4px 12px rgba(199, 92, 235, 0.45));
+}
+
+.hero-mark {
+  display: block;
+  width: 128px;
+  height: 128px;
+  margin: 0 auto 28px;
+  border-radius: 28px;
+  object-fit: cover;
+  filter:
+    drop-shadow(0 18px 44px rgba(199, 92, 235, 0.45))
+    drop-shadow(0 6px 18px rgba(56, 158, 255, 0.32));
 }
 
 /* ─── Coursion: hero mosaic (visual replacement for product screenshot) ─── */
