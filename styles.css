@@ -1305,6 +1305,158 @@ footer a:hover { color: var(--text-primary); }
   .ios-stage .app-icon { width: 108px; height: 108px; }
 }
 
+/* ─── Coursion: App-Store-Today-style iOS card grid ─── */
+.app-deck { padding: 16px 0 64px; }
+
+.deck-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+.app-tile {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 22px 22px 24px;
+  min-height: 320px;
+  border-radius: 22px;
+  text-decoration: none;
+  color: #fff;
+  overflow: hidden;
+  isolation: isolate;
+  border: 1px solid rgba(255,255,255,0.08);
+  background: rgba(255,255,255,0.02);
+  transition:
+    transform 0.4s cubic-bezier(0.2,0.8,0.2,1),
+    box-shadow 0.4s ease,
+    border-color 0.3s ease;
+}
+
+.app-tile .tile-bg {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    radial-gradient(ellipse 100% 70% at 20% 0%, var(--tile-from), transparent 60%),
+    radial-gradient(ellipse 100% 70% at 100% 100%, var(--tile-to), transparent 65%),
+    linear-gradient(160deg, rgba(0,0,0,0.45), rgba(0,0,0,0.7));
+  opacity: 0.85;
+  transition: opacity 0.4s ease, transform 0.6s ease;
+}
+
+.app-tile::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-image: radial-gradient(rgba(255,255,255,0.05) 1px, transparent 1px);
+  background-size: 3px 3px;
+  mix-blend-mode: overlay;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.app-tile:hover {
+  transform: translateY(-5px);
+  border-color: rgba(255,255,255,0.18);
+  box-shadow:
+    0 22px 50px rgba(0,0,0,0.45),
+    0 0 60px color-mix(in srgb, var(--tile-to) 28%, transparent);
+}
+
+.app-tile:hover .tile-bg { opacity: 1; transform: scale(1.04); }
+
+.app-tile[aria-disabled="true"] { cursor: default; }
+
+.tile-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tile-cat {
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.85);
+  padding: 5px 10px;
+  border-radius: 999px;
+  background: rgba(0,0,0,0.30);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+.tile-plat {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.7);
+  padding: 4px 9px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.22);
+}
+
+.tile-icon-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: auto;
+}
+
+.tile-icon-row img {
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow:
+    0 8px 22px rgba(0,0,0,0.45),
+    inset 0 0 0 1px rgba(255,255,255,0.14);
+  flex-shrink: 0;
+}
+
+.tile-id { min-width: 0; }
+
+.tile-name {
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: #fff;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.35);
+}
+
+.tile-sub {
+  font-size: 12.5px;
+  font-weight: 500;
+  color: rgba(255,255,255,0.78);
+  margin-top: 2px;
+}
+
+.tile-foot h4 {
+  margin: 0 0 6px;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  line-height: 1.25;
+  color: #fff;
+  text-shadow: 0 1px 6px rgba(0,0,0,0.35);
+}
+
+.tile-foot p {
+  margin: 0;
+  font-size: 13.5px;
+  line-height: 1.5;
+  color: rgba(255,255,255,0.82);
+}
+
+@media (max-width: 640px) {
+  .deck-grid { grid-template-columns: 1fr; }
+  .app-tile { min-height: 280px; }
+}
+
 /* ─── Coursion: mobile lineup grid ─── */
 .mobile-grid {
   display: grid;
