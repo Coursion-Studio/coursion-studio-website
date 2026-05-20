@@ -1132,9 +1132,94 @@ footer a:hover { color: var(--text-primary); }
   text-shadow: 0 1px 3px rgba(0,0,0,0.4);
 }
 
-/* tighten the section header above the showcase rows */
-section#products { padding-bottom: 0; }
 .showcase { padding-top: 16px; }
+
+/* ─── Coursion: big banner-style section heads (Part 01 / Part 02) ─── */
+.section-head {
+  padding: 96px 0 24px;
+  position: relative;
+}
+
+.section-head::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.16), transparent);
+}
+
+.section-head .head-inner {
+  max-width: 760px;
+}
+
+.section-head .head-meta {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 22px;
+}
+
+.section-head .head-kicker {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: var(--brand-gradient);
+  color: #fff;
+  box-shadow: 0 6px 18px rgba(199, 92, 235, 0.35);
+}
+
+.section-head .head-count {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  color: var(--text-tertiary);
+}
+
+.section-head .head-count::before {
+  content: "·";
+  margin-right: 12px;
+  color: var(--text-tertiary);
+}
+
+.section-head .head-title {
+  font-size: clamp(44px, 7vw, 76px);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.0;
+  margin: 0 0 14px;
+}
+
+.section-head .head-title .grad {
+  background: var(--brand-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.section-head .head-title .grad.ios-grad {
+  background: linear-gradient(90deg, #2DD4BF, #0EA5E9, #6366F1);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.section-head .head-lede {
+  font-size: 18px;
+  color: var(--text-secondary);
+  max-width: 580px;
+  margin: 0;
+}
+
+/* shrink product-hero icon for iOS rows (looks better at smaller size) */
+.window.product-hero .ph-inner img {
+  width: 144px;
+  height: 144px;
+}
 
 /* ─── Coursion: mobile lineup grid ─── */
 .mobile-grid {
