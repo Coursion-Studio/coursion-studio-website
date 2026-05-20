@@ -3,16 +3,69 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Coursion Studio — Native software for Mac, iOS, and the web</title>
-  <meta name="description" content="Coursion Studio builds native, privacy-first software. Mac toolkits, iOS apps, and web tools — on-device by default." />
+
+  <title>Coursion Studio — Indie Mac &amp; iOS Apps. Native. On-device. No Subscriptions.</title>
+  <meta name="description" content="Coursion Studio is an indie software studio shipping native Mac and iOS apps — Knack, AIStats, Hutch, Hearthbound, Tide, Noty, Nutrify, NailAI, Shoppy, and 90 Days Challenge. SwiftUI on Apple. On-device. Buy-once where it makes sense." />
+  <meta name="keywords" content="indie Mac apps, native iOS apps, SwiftUI apps, Expo React Native apps, on-device software, no subscription apps, Knack, AIStats, Hutch, Hearthbound, Tide app, Coursion Studio" />
+  <meta name="author" content="Coursion Studio" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <link rel="canonical" href="https://coursion.studio/" />
+
   <link rel="icon" type="image/png" href="assets/icon.png" />
   <link rel="apple-touch-icon" href="assets/icon.png" />
   <link rel="stylesheet" href="styles.css" />
-  <meta property="og:title" content="Coursion Studio" />
-  <meta property="og:description" content="Native software for Mac, iOS, and the web. On-device by default." />
-  <meta property="og:image" content="assets/og.png" />
-  <meta property="og:url" content="https://coursion.studio" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Coursion Studio" />
+  <meta property="og:title" content="Coursion Studio — Indie Mac &amp; iOS apps" />
+  <meta property="og:description" content="Native software for Mac and iOS. SwiftUI on Apple, Expo on iOS. On-device by default. No accounts where none are needed." />
+  <meta property="og:image" content="https://coursion.studio/assets/og.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:url" content="https://coursion.studio/" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Coursion Studio — Indie Mac &amp; iOS apps" />
+  <meta name="twitter:description" content="Native software for Mac and iOS. On-device. No subscriptions where one-time pricing makes sense." />
+  <meta name="twitter:image" content="https://coursion.studio/assets/og.png" />
+
   <meta name="theme-color" content="#07091A" />
+  <meta name="color-scheme" content="dark" />
+
+  <!-- Structured data: organization + product catalog -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Coursion Studio",
+    "url": "https://coursion.studio",
+    "logo": "https://coursion.studio/assets/icon.png",
+    "description": "Indie software studio building native Mac and iOS apps.",
+    "sameAs": ["https://github.com/kurayogun"]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Coursion Studio app catalog",
+    "itemListElement": [
+      {"@type":"SoftwareApplication","position":1,"name":"Knack","operatingSystem":"macOS","applicationCategory":"UtilitiesApplication","url":"https://knack.coursion.studio"},
+      {"@type":"SoftwareApplication","position":2,"name":"AIStats","operatingSystem":"macOS","applicationCategory":"DeveloperApplication","url":"https://aistats.coursion.studio"},
+      {"@type":"SoftwareApplication","position":3,"name":"Hutch","operatingSystem":"macOS","applicationCategory":"UtilitiesApplication","url":"https://hutch.coursion.studio"},
+      {"@type":"MobileApplication","position":4,"name":"Hearthbound","operatingSystem":"iOS","applicationCategory":"LifestyleApplication"},
+      {"@type":"MobileApplication","position":5,"name":"Tide","operatingSystem":"iOS","applicationCategory":"HealthApplication"},
+      {"@type":"MobileApplication","position":6,"name":"Noty","operatingSystem":"iOS","applicationCategory":"ProductivityApplication"},
+      {"@type":"MobileApplication","position":7,"name":"Nutrify","operatingSystem":"iOS","applicationCategory":"HealthApplication"},
+      {"@type":"MobileApplication","position":8,"name":"NailAI","operatingSystem":"iOS","applicationCategory":"LifestyleApplication"},
+      {"@type":"MobileApplication","position":9,"name":"Shoppy","operatingSystem":"iOS","applicationCategory":"LifestyleApplication"},
+      {"@type":"MobileApplication","position":10,"name":"90 Days Challenge","operatingSystem":"iOS","applicationCategory":"HealthApplication"}
+    ]
+  }
+  </script>
 </head>
 <body>
   <div class="bg"></div>
@@ -149,8 +202,15 @@
           <p>Chores become quests. Family members pick classes — Laundry Mage, Kitchen Knight, Garden Druid. Earn XP and titles. Team up for weekly raids on the big shared chores.</p>
           <ul class="pills"><li>Family quests</li><li>Classes &amp; XP</li><li>Weekly raids</li></ul>
         </div>
-        <figure class="window product-hero" style="--ph-grad: linear-gradient(135deg,#F472B6 0%,#C084FC 50%,#8B5CF6 100%);">
-          <div class="ph-inner"><img src="assets/products/hearthbound.png" alt="Hearthbound icon" /><div class="ph-caption">Hearthbound</div></div>
+        <figure class="ios-stage" style="--ios-bg: radial-gradient(ellipse at 50% 40%, rgba(192,132,252,0.45), transparent 60%); --phone-glow: rgba(192,132,252,0.45);">
+          <div class="phone" style="--phone-bg: linear-gradient(160deg,#3B1E62,#1B0E33);">
+            <div class="screen">
+              <img class="app-icon" src="assets/products/hearthbound.png" alt="Hearthbound app icon" />
+              <div class="app-name">Hearthbound</div>
+              <div class="app-tag">Chores become quests</div>
+              <div class="home-indicator"></div>
+            </div>
+          </div>
         </figure>
       </article>
 
@@ -164,8 +224,15 @@
           <p>Glossy and quiet. Six presets plus custom windows. Coming next: workout, pomodoro, meditation, and sleep timers — all on the same engine.</p>
           <ul class="pills"><li>6 fasting presets</li><li>Custom windows</li><li>Multi-timer v2</li></ul>
         </div>
-        <figure class="window product-hero" style="--ph-grad: linear-gradient(135deg,#2DD4BF 0%,#0EA5E9 60%,#0284C7 100%);">
-          <div class="ph-inner"><img src="assets/products/tide.png" alt="Tide icon" /><div class="ph-caption">Tide</div></div>
+        <figure class="ios-stage" style="--ios-bg: radial-gradient(ellipse at 50% 40%, rgba(14,165,233,0.45), transparent 60%); --phone-glow: rgba(14,165,233,0.45);">
+          <div class="phone" style="--phone-bg: linear-gradient(160deg,#0F3F5E,#082236);">
+            <div class="screen">
+              <img class="app-icon" src="assets/products/tide.png" alt="Tide app icon" />
+              <div class="app-name">Tide</div>
+              <div class="app-tag">Intermittent fasting, calmly</div>
+              <div class="home-indicator"></div>
+            </div>
+          </div>
         </figure>
       </article>
 
@@ -179,8 +246,15 @@
           <p>Capture, organize, and summarize without leaving the keyboard. Smart tags, threaded notes, and on-demand AI for the long ones.</p>
           <ul class="pills"><li>AI summaries</li><li>Smart tags</li><li>Keyboard-first</li></ul>
         </div>
-        <figure class="window product-hero" style="--ph-grad: linear-gradient(135deg,#FBBF24 0%,#F97316 60%,#EA580C 100%);">
-          <div class="ph-inner"><img src="assets/products/noty.png" alt="Noty icon" /><div class="ph-caption">Noty</div></div>
+        <figure class="ios-stage" style="--ios-bg: radial-gradient(ellipse at 50% 40%, rgba(249,115,22,0.45), transparent 60%); --phone-glow: rgba(249,115,22,0.45);">
+          <div class="phone" style="--phone-bg: linear-gradient(160deg,#3F2008,#1F1004);">
+            <div class="screen">
+              <img class="app-icon" src="assets/products/noty.png" alt="Noty app icon" />
+              <div class="app-name">Noty</div>
+              <div class="app-tag">Notes, sharpened with AI</div>
+              <div class="home-indicator"></div>
+            </div>
+          </div>
         </figure>
       </article>
 
@@ -194,8 +268,15 @@
           <p>Snap a meal, get the macros, move on with your day. No 20-step entry flows. No spreadsheets pretending to be apps.</p>
           <ul class="pills"><li>Photo logging</li><li>Macro tracking</li><li>One-tap entries</li></ul>
         </div>
-        <figure class="window product-hero" style="--ph-grad: linear-gradient(135deg,#6EE7B7 0%,#14B8A6 60%,#0D9488 100%);">
-          <div class="ph-inner"><img src="assets/products/nutrify.png" alt="Nutrify icon" /><div class="ph-caption">Nutrify</div></div>
+        <figure class="ios-stage" style="--ios-bg: radial-gradient(ellipse at 50% 40%, rgba(20,184,166,0.45), transparent 60%); --phone-glow: rgba(20,184,166,0.45);">
+          <div class="phone" style="--phone-bg: linear-gradient(160deg,#053B36,#02201D);">
+            <div class="screen">
+              <img class="app-icon" src="assets/products/nutrify.png" alt="Nutrify app icon" />
+              <div class="app-name">Nutrify</div>
+              <div class="app-tag">Snap meals, track macros</div>
+              <div class="home-indicator"></div>
+            </div>
+          </div>
         </figure>
       </article>
 
@@ -209,8 +290,15 @@
           <p>Generate, save, and share looks before the appointment. Bring the reference to the salon — or to your own kit at home.</p>
           <ul class="pills"><li>AI generation</li><li>Lookbook</li><li>Share-ready</li></ul>
         </div>
-        <figure class="window product-hero" style="--ph-grad: linear-gradient(135deg,#F472B6 0%,#EC4899 60%,#DB2777 100%);">
-          <div class="ph-inner"><img src="assets/products/nailai.png" alt="NailAI icon" /><div class="ph-caption">NailAI</div></div>
+        <figure class="ios-stage" style="--ios-bg: radial-gradient(ellipse at 50% 40%, rgba(236,72,153,0.45), transparent 60%); --phone-glow: rgba(236,72,153,0.45);">
+          <div class="phone" style="--phone-bg: linear-gradient(160deg,#4A0D2B,#240416);">
+            <div class="screen">
+              <img class="app-icon" src="assets/products/nailai.png" alt="NailAI app icon" />
+              <div class="app-name">NailAI</div>
+              <div class="app-tag">Design your next set</div>
+              <div class="home-indicator"></div>
+            </div>
+          </div>
         </figure>
       </article>
 
@@ -224,8 +312,15 @@
           <p>Shared, sorted, and synced across the household. Recurring items, smart sections, and a check-off interaction worth opening the app for.</p>
           <ul class="pills"><li>Shared lists</li><li>Smart sections</li><li>Sync</li></ul>
         </div>
-        <figure class="window product-hero" style="--ph-grad: linear-gradient(135deg,#22D3EE 0%,#3B82F6 60%,#2563EB 100%);">
-          <div class="ph-inner"><img src="assets/products/shoppy.png" alt="Shoppy icon" /><div class="ph-caption">Shoppy</div></div>
+        <figure class="ios-stage" style="--ios-bg: radial-gradient(ellipse at 50% 40%, rgba(59,130,246,0.45), transparent 60%); --phone-glow: rgba(59,130,246,0.45);">
+          <div class="phone" style="--phone-bg: linear-gradient(160deg,#0B2950,#04132B);">
+            <div class="screen">
+              <img class="app-icon" src="assets/products/shoppy.png" alt="Shoppy app icon" />
+              <div class="app-name">Shoppy</div>
+              <div class="app-tag">Shared lists, done right</div>
+              <div class="home-indicator"></div>
+            </div>
+          </div>
         </figure>
       </article>
 
@@ -239,8 +334,15 @@
           <p>Streaks, gentle reminders, and no shame loops. A clean tracker that gets out of the way and lets the days add up.</p>
           <ul class="pills"><li>Habit streaks</li><li>Gentle nudges</li><li>No shame</li></ul>
         </div>
-        <figure class="window product-hero" style="--ph-grad: linear-gradient(135deg,#C084FC 0%,#8B5CF6 60%,#6366F1 100%);">
-          <div class="ph-inner"><img src="assets/products/90days.png" alt="90 Days Challenge icon" /><div class="ph-caption">90 Days Challenge</div></div>
+        <figure class="ios-stage" style="--ios-bg: radial-gradient(ellipse at 50% 40%, rgba(139,92,246,0.45), transparent 60%); --phone-glow: rgba(139,92,246,0.45);">
+          <div class="phone" style="--phone-bg: linear-gradient(160deg,#2A1B5E,#130A2F);">
+            <div class="screen">
+              <img class="app-icon" src="assets/products/90days.png" alt="90 Days Challenge app icon" />
+              <div class="app-name">90 Days Challenge</div>
+              <div class="app-tag">Ninety days. One habit.</div>
+              <div class="home-indicator"></div>
+            </div>
+          </div>
         </figure>
       </article>
 
