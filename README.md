@@ -28,7 +28,7 @@ And `www` CNAME → `<github-user>.github.io`.
 
 ## Structure
 
-- `index.html` — studio landing: app catalog, Mac showcase, iPhone apps, principles
+- `index.html` — studio landing: app catalog, Mac showcase, mobile apps, principles
 - `privacy.html` — studio-wide privacy
 - `styles.css` — shared styles for both pages
 - `assets/icons/`, `assets/shots/` — app icons and screenshots (WebP)

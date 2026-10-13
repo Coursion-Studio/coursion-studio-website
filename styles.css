@@ -289,6 +289,16 @@ p { margin: 0; text-wrap: pretty; }
 .catalog img { width: 40px; height: 40px; border-radius: 10px; }
 .catalog .c-name { font-weight: 600; font-size: 16px; line-height: 1.3; }
 .catalog .c-what { display: block; color: var(--text-3); font-size: 14px; line-height: 1.35; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.catalog .c-os {
+  margin-left: 6px;
+  padding: 1px 7px;
+  border-radius: 6px;
+  border: 1px solid var(--line-strong);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-2);
+  vertical-align: 1px;
+}
 .catalog .c-plat { font-size: 13px; color: var(--text-3); white-space: nowrap; }
 .catalog .c-arrow {
   display: inline-block;
@@ -426,8 +436,6 @@ p { margin: 0; text-wrap: pretty; }
 .product-knack { --c: #e25cf0; --c-soft: rgba(226, 92, 240, 0.2); }
 .product-aistats { --c: #4f8fff; --c-soft: rgba(79, 143, 255, 0.22); }
 .product-hutch { --c: #ff8a5c; --c-soft: rgba(255, 128, 92, 0.2); }
-.product-rift { --c: #ff4f8b; --c-soft: rgba(255, 79, 139, 0.2); }
-.product-forge { --c: #b8d14f; --c-soft: rgba(184, 209, 79, 0.14); }
 .product-dpm { --c: #4fd1a5; --c-soft: rgba(79, 209, 165, 0.15); }
 
 code {
