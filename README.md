@@ -34,3 +34,4 @@ And `www` CNAME → `<github-user>.github.io`.
 - `assets/icons/`, `assets/shots/` — app icons and screenshots (WebP)
 - `assets/fonts/` — self-hosted Bricolage Grotesque (OFL)
 - `assets/og.png` — social preview image
+- `assets/signature/` — email signature images, hot-linked from sent mail; never rename, move or delete them
