@@ -28,7 +28,9 @@ And `www` CNAME → `<github-user>.github.io`.
 
 ## Structure
 
-- `index.html` — landing + product grid
+- `index.html` — studio landing: app catalog, Mac showcase, iPhone apps, principles
 - `privacy.html` — studio-wide privacy
-- `styles.css` — shared dark theme (mirrors the MacApps product sites)
-- `assets/` — icons, OG image, product art
+- `styles.css` — shared styles for both pages
+- `assets/icons/`, `assets/shots/` — app icons and screenshots (WebP)
+- `assets/fonts/` — self-hosted Bricolage Grotesque (OFL)
+- `assets/og.png` — social preview image

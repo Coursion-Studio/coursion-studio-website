@@ -4,9 +4,8 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Coursion Studio — Indie Mac &amp; iOS Apps. Native. On-device. No Subscriptions.</title>
-  <meta name="description" content="Coursion Studio is an indie software studio shipping native Mac and iOS apps — Rift, Forge, Knack, AIStats, Hutch, Nook, Hearthbound, Noty, Nutrify, NailAI, and Shoppy. SwiftUI on Apple. On-device. Buy-once where it makes sense." />
-  <meta name="keywords" content="indie Mac apps, native iOS apps, SwiftUI apps, Expo React Native apps, on-device software, no subscription apps, Rift, Forge, Knack, AIStats, Hutch, Nook, AI code review, Coursion Studio" />
+  <title>Coursion Studio · Small, native apps for Mac and iPhone</title>
+  <meta name="description" content="Coursion Studio is an independent studio making focused native apps: Knack, AI Stats, Hutch, Rift, Forge and Device Performance Monitor for Mac, plus Noty, Nutrify and NailAI for iPhone." />
   <meta name="author" content="Coursion Studio" />
   <meta name="robots" content="index, follow, max-image-preview:large" />
   <link rel="canonical" href="https://coursion.studio/" />
@@ -15,409 +14,376 @@
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png" />
   <link rel="icon" type="image/png" sizes="512x512" href="assets/icon-512.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
+  <link rel="preload" href="assets/fonts/bricolage-grotesque-latin.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="stylesheet" href="styles.css" />
 
-  <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Coursion Studio" />
-  <meta property="og:title" content="Coursion Studio — Indie Mac &amp; iOS apps" />
-  <meta property="og:description" content="Native software for Mac and iOS. SwiftUI on Apple, Expo on iOS. On-device by default. No accounts where none are needed." />
+  <meta property="og:title" content="Coursion Studio · Small, native apps for Mac and iPhone" />
+  <meta property="og:description" content="An independent studio making focused native software for Mac and iPhone. On your device by default. Pay once where it fits." />
   <meta property="og:image" content="https://coursion.studio/assets/og.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Coursion Studio: small, native apps for Mac and iPhone" />
   <meta property="og:url" content="https://coursion.studio/" />
   <meta property="og:locale" content="en_US" />
 
-  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Coursion Studio — Indie Mac &amp; iOS apps" />
-  <meta name="twitter:description" content="Native software for Mac and iOS. On-device. No subscriptions where one-time pricing makes sense." />
+  <meta name="twitter:title" content="Coursion Studio · Small, native apps for Mac and iPhone" />
+  <meta name="twitter:description" content="An independent studio making focused native software for Mac and iPhone. On your device by default. Pay once where it fits." />
   <meta name="twitter:image" content="https://coursion.studio/assets/og.png" />
 
-  <meta name="theme-color" content="#07091A" />
+  <meta name="theme-color" content="#0d0c1f" />
   <meta name="color-scheme" content="dark" />
 
-  <!-- Structured data: organization + product catalog -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Coursion Studio",
     "url": "https://coursion.studio",
-    "logo": "https://coursion.studio/assets/icon.png",
-    "description": "Indie software studio building native Mac and iOS apps.",
-    "sameAs": ["https://github.com/kurayogun"]
+    "logo": "https://coursion.studio/assets/icon-512.png",
+    "email": "hello@coursion.studio",
+    "description": "Independent software studio making native apps for Mac and iPhone.",
+    "sameAs": ["https://github.com/kuraydev"]
   }
   </script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    "name": "Coursion Studio app catalog",
+    "name": "Coursion Studio apps",
     "itemListElement": [
-      {"@type":"SoftwareApplication","position":1,"name":"Knack","operatingSystem":"macOS","applicationCategory":"UtilitiesApplication","url":"https://knack.coursion.studio"},
-      {"@type":"SoftwareApplication","position":2,"name":"AIStats","operatingSystem":"macOS","applicationCategory":"DeveloperApplication","url":"https://apps.apple.com/us/app/aistats/id6762005507"},
+      {"@type":"SoftwareApplication","position":1,"name":"Knack","operatingSystem":"macOS","applicationCategory":"UtilitiesApplication","url":"https://knack.coursion.studio","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}},
+      {"@type":"SoftwareApplication","position":2,"name":"AI Stats","operatingSystem":"macOS, iOS, iPadOS","applicationCategory":"ProductivityApplication","url":"https://aistats.coursion.studio","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}},
       {"@type":"SoftwareApplication","position":3,"name":"Hutch","operatingSystem":"macOS","applicationCategory":"UtilitiesApplication","url":"https://hutch.coursion.studio"},
       {"@type":"SoftwareApplication","position":4,"name":"Rift","operatingSystem":"macOS","applicationCategory":"DeveloperApplication","url":"https://rift.coursion.studio"},
       {"@type":"SoftwareApplication","position":5,"name":"Forge","operatingSystem":"macOS","applicationCategory":"DeveloperApplication","url":"https://forge.coursion.studio"},
-      {"@type":"SoftwareApplication","position":6,"name":"Nook","operatingSystem":"macOS","applicationCategory":"UtilitiesApplication","url":"https://github.com/kuraydev/nook"},
-      {"@type":"MobileApplication","position":7,"name":"Hearthbound","operatingSystem":"iOS","applicationCategory":"LifestyleApplication"},
-      {"@type":"MobileApplication","position":8,"name":"Noty: AI Daily Planner & Focus","operatingSystem":"iOS","applicationCategory":"ProductivityApplication","url":"https://apps.apple.com/us/app/noty-ai-daily-planner-focus/id1620951759"},
-      {"@type":"MobileApplication","position":9,"name":"Nutrify - Supplement Tracker","operatingSystem":"iOS","applicationCategory":"HealthApplication","url":"https://apps.apple.com/us/app/nutrify-supplement-tracker/id6753355163"},
-      {"@type":"MobileApplication","position":10,"name":"NailAI - Nail Art & Health","operatingSystem":"iOS","applicationCategory":"LifestyleApplication","url":"https://apps.apple.com/us/app/nailai-nail-art-health/id6751233030"},
-      {"@type":"MobileApplication","position":11,"name":"Shoppy - Shopping List","operatingSystem":"iOS","applicationCategory":"LifestyleApplication","url":"https://apps.apple.com/us/app/shoppy-shopping-list/id1621044552"}
+      {"@type":"SoftwareApplication","position":6,"name":"Device Performance Monitor","operatingSystem":"macOS","applicationCategory":"DeveloperApplication","url":"https://dpm.coursion.studio","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}},
+      {"@type":"MobileApplication","position":7,"name":"Noty: AI Daily Planner & Focus","operatingSystem":"iOS","applicationCategory":"ProductivityApplication","url":"https://apps.apple.com/us/app/noty-ai-daily-planner-focus/id1620951759"},
+      {"@type":"MobileApplication","position":8,"name":"Nutrify - Supplement Tracker","operatingSystem":"iOS","applicationCategory":"HealthApplication","url":"https://apps.apple.com/us/app/nutrify-supplement-tracker/id6753355163"},
+      {"@type":"MobileApplication","position":9,"name":"NailAI - Nail Art & Health","operatingSystem":"iOS","applicationCategory":"LifestyleApplication","url":"https://apps.apple.com/us/app/nailai-nail-art-health/id6751233030"}
     ]
   }
   </script>
   <script defer src="https://polaris-backend-489776622782.europe-west1.run.app/api/v1/analytics/t.js" data-site="coursion.studio"></script>
 </head>
 <body>
-  <div class="bg"></div>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-arrow" viewBox="0 0 16 16"><path d="M3 8h9.5M8.5 3.5 13 8l-4.5 4.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-out" viewBox="0 0 16 16"><path d="M5 3.5h7.5V11M12.2 3.8 3.5 12.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-down" viewBox="0 0 16 16"><path d="M8 2.5v8.5M4 7.5 8 11.5l4-4M3 14h10" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  </svg>
 
-  <div class="container">
-    <nav class="top">
-      <div class="brand">
-        <img class="brand-mark" src="assets/icon.png" alt="Coursion Studio" />
-        <span>Coursion Studio</span>
-      </div>
-      <div class="links">
-        <a href="#products">Mac</a>
-        <a href="#mobile">iOS</a>
-        <a href="#principles">Principles</a>
-        <a href="https://github.com/kurayogun" target="_blank" rel="noopener">GitHub</a>
-        <a href="privacy.html">Privacy</a>
-      </div>
-    </nav>
+  <a class="skip" href="#main">Skip to content</a>
 
-    <header class="hero">
-      <img class="hero-mark" src="assets/icon.png" alt="Coursion Studio logo" />
-      <div class="eyebrow">An independent software studio</div>
-      <h1>Small apps,<br /><span class="grad">built with care.</span></h1>
-      <p class="sub">
-        Coursion Studio designs and ships focused native software for Mac, iOS,
-        and the web. On-device by default. No accounts where none are needed.
-        Buy-once where a subscription would be greedy.
-      </p>
-      <div class="cta-row">
-        <a class="btn primary" href="#products">See the lineup</a>
-        <a class="btn outline" href="#principles">How we work</a>
-      </div>
-    </header>
-  </div>
-
-  <div class="container">
-    <section id="products" class="section-head">
-      <div class="head-inner">
-        <div class="head-meta">
-          <span class="head-kicker">Part 01</span>
-          <span class="head-count">6 apps</span>
-        </div>
-        <h2 class="head-title">On <span class="grad">macOS</span>.</h2>
-        <p class="head-lede">Native SwiftUI apps that live on your Mac. On-device, no subscriptions, no detours.</p>
-      </div>
-    </section>
-
-    <section class="showcase">
-
-      <!-- 01 · Knack -->
-      <article class="showcase-row" id="knack">
-        <div class="showcase-copy">
-          <div class="chip chip-amber">
-            <span class="dot" style="background:linear-gradient(135deg,#F472B6,#C084FC 50%,#60A5FA);"></span>
-            Knack <span class="platform-tag mac">macOS</span>
-          </div>
-          <h3>The complete Mac toolkit.</h3>
-          <p>20 native tools for images, PDFs, audio, video, and App Store marketing. App icon generator, on-device transcription, document scanner, depth-aware portrait effects, screenshot designer, and more. Lives in the menu bar so colors and text are a keypress away.</p>
-          <ul class="pills">
-            <li>On-device</li><li>No accounts</li><li>$4.99 one-time Pro</li>
-          </ul>
-          <div style="margin-top:22px;">
-            <a class="btn primary" href="https://knack.coursion.studio" target="_blank" rel="noopener">Visit knack.coursion.studio</a>
-          </div>
-        </div>
-        <figure class="window">
-          <img src="assets/products/knack.png" alt="Knack home dashboard showing 20 native Mac tools" loading="lazy" decoding="async" />
-        </figure>
-      </article>
-
-      <!-- 02 · AIStats (reverse) -->
-      <article class="showcase-row reverse" id="aistats">
-        <div class="showcase-copy">
-          <div class="chip chip-brand">
-            <span class="dot" style="background:linear-gradient(135deg,#C084FC,#8B5CF6);"></span>
-            AIStats <span class="platform-tag mac">macOS</span>
-          </div>
-          <h3>Live AI usage in your menu bar.</h3>
-          <p>Tokens, spend, and provider mix at a glance — across ChatGPT, Claude, Codex, Cursor, Copilot, Grok, Mistral, OpenRouter. Widgets for the desktop. Everything stays on your Mac.</p>
-          <ul class="pills">
-            <li>Menu bar widget</li><li>9+ providers</li><li>On-device</li>
-          </ul>
-          <div style="margin-top:22px;">
-            <a class="btn primary" href="https://apps.apple.com/us/app/aistats/id6762005507?mt=12" target="_blank" rel="noopener">Download on the Mac App Store</a>
-            <a class="btn outline" href="https://aistats.coursion.studio" target="_blank" rel="noopener" style="margin-left:10px;">Website</a>
-          </div>
-        </div>
-        <figure class="window">
-          <img src="assets/products/aistats.png" alt="AIStats menu bar showing live token and cost stats" loading="lazy" decoding="async" />
-        </figure>
-      </article>
-
-      <!-- 03 · Hutch -->
-      <article class="showcase-row" id="hutch">
-        <div class="showcase-copy">
-          <div class="chip" style="background: linear-gradient(135deg, rgba(251,191,36,0.18), rgba(249,115,22,0.14)); border-color: rgba(249,115,22,0.3);">
-            <span class="dot" style="background:linear-gradient(135deg,#FBBF24,#F97316);"></span>
-            Hutch <span class="platform-tag mac">macOS</span>
-          </div>
-          <h3>Homebrew, organized.</h3>
-          <p>Browse, search, and install casks through a native, opinionated interface. The terminal stays — Hutch just gives it a face you can scroll.</p>
-          <ul class="pills">
-            <li>Native SwiftUI</li><li>Cask browser</li><li>Free</li>
-          </ul>
-          <div style="margin-top:22px;">
-            <a class="btn primary" href="https://hutch.coursion.studio" target="_blank" rel="noopener">Visit hutch.coursion.studio</a>
-          </div>
-        </div>
-        <figure class="window">
-          <img src="assets/products/hutch.png" alt="Hutch — Pounce command bar settings" loading="lazy" decoding="async" />
-        </figure>
-      </article>
-
-      <!-- 04 · Rift (reverse) -->
-      <article class="showcase-row reverse" id="rift">
-        <div class="showcase-copy">
-          <div class="chip" style="background: linear-gradient(135deg, rgba(199,132,252,0.18), rgba(139,92,246,0.14)); border-color: rgba(139,92,246,0.3);">
-            <span class="dot" style="background:linear-gradient(135deg,#C084FC,#8B5CF6);"></span>
-            Rift <span class="platform-tag mac">macOS</span>
-          </div>
-          <h3>Trust the code your agent wrote.</h3>
-          <p>Review, blame, and verify AI-generated code before it merges. On-device risk triage on every diff, deep Claude review on the ones that matter, and a blame gutter that names the agent session behind each line.</p>
-          <ul class="pills">
-            <li>On-device triage</li><li>AI review</li><li>Agent blame</li><li>Monaco diffs</li>
-          </ul>
-          <div style="margin-top:22px;">
-            <a class="btn primary" href="https://rift.coursion.studio" target="_blank" rel="noopener">Visit rift.coursion.studio</a>
-          </div>
-        </div>
-        <figure class="window product-hero" style="--ph-grad: linear-gradient(135deg,#C084FC,#6366F1);">
-          <div class="ph-inner">
-            <img src="assets/products/rift.png" alt="Rift app icon" loading="lazy" decoding="async" />
-            <div class="ph-caption">Review, blame &amp; verify AI code</div>
-          </div>
-        </figure>
-      </article>
-
-      <!-- 05 · Forge -->
-      <article class="showcase-row" id="forge">
-        <div class="showcase-copy">
-          <div class="chip" style="background: linear-gradient(135deg, rgba(255,129,175,0.18), rgba(199,92,235,0.14)); border-color: rgba(255,81,137,0.3);">
-            <span class="dot" style="background:linear-gradient(135deg,#FF5189,#C75CEB);"></span>
-            Forge <span class="platform-tag mac">macOS</span>
-          </div>
-          <h3>A cloud-shaped IDE, on your Mac.</h3>
-          <p>An agent-first development workbench — terminal, AI chat, browser, code review, and voice, all pre-wired in one native window. No VMs, no servers, your own keys.</p>
-          <ul class="pills">
-            <li>Native SwiftUI</li><li>Agent panes</li><li>Local</li><li>BYO keys</li>
-          </ul>
-          <div style="margin-top:22px;">
-            <a class="btn primary" href="https://forge.coursion.studio" target="_blank" rel="noopener">Visit forge.coursion.studio</a>
-          </div>
-        </div>
-        <figure class="window product-hero" style="--ph-grad: linear-gradient(135deg,#FF5189,#C75CEB);">
-          <div class="ph-inner">
-            <img src="assets/products/forge.png" alt="Forge app icon" loading="lazy" decoding="async" />
-            <div class="ph-caption">Agent-first dev workbench</div>
-          </div>
-        </figure>
-      </article>
-
-      <!-- 06 · Nook (reverse) -->
-      <article class="showcase-row reverse" id="nook">
-        <div class="showcase-copy">
-          <div class="chip" style="background: linear-gradient(135deg, rgba(251,146,60,0.18), rgba(249,115,22,0.14)); border-color: rgba(249,115,22,0.3);">
-            <span class="dot" style="background:linear-gradient(135deg,#FB923C,#F97316);"></span>
-            Nook <span class="platform-tag mac">macOS</span>
-          </div>
-          <h3>A cozy browser for macOS.</h3>
-          <p>An Arc-inspired browser that's calm, native, and free — spaces, a tidy sidebar, and none of the clutter. Notarized and lightweight.</p>
-          <ul class="pills">
-            <li>Arc-inspired</li><li>Native</li><li>Free</li><li>Notarized</li>
-          </ul>
-          <div style="margin-top:22px;">
-            <a class="btn primary" href="https://github.com/kuraydev/nook/releases/latest" target="_blank" rel="noopener">Download Nook</a>
-          </div>
-        </div>
-        <figure class="window product-hero" style="--ph-grad: linear-gradient(135deg,#FB923C,#EA580C);">
-          <div class="ph-inner">
-            <img src="assets/products/nook.png" alt="Nook app icon" loading="lazy" decoding="async" />
-            <div class="ph-caption">A cozy, Arc-inspired browser</div>
-          </div>
-        </figure>
-      </article>
-
-    </section>
-
-    <section id="mobile" class="section-head">
-      <div class="head-inner">
-        <div class="head-meta">
-          <span class="head-kicker">Part 02</span>
-          <span class="head-count">5 apps</span>
-        </div>
-        <h2 class="head-title">On <span class="grad ios-grad">iOS</span>.</h2>
-        <p class="head-lede">Focused mobile apps built with Expo and React Native. Small ideas, sharply executed.</p>
-      </div>
-    </section>
-
-    <section class="app-deck">
-      <div class="deck-grid">
-
-        <a class="app-tile" id="hearthbound" href="#" aria-disabled="true" style="--tile-from:#F472B6; --tile-to:#8B5CF6;">
-          <div class="tile-bg"></div>
-          <div class="tile-top">
-            <span class="tile-cat">Lifestyle</span>
-            <span class="tile-plat">iOS</span>
-          </div>
-          <div class="tile-icon-row">
-            <img src="assets/products/hearthbound.png" alt="Hearthbound" />
-            <div class="tile-id">
-              <div class="tile-name">Hearthbound</div>
-              <div class="tile-sub">Family chores, gamified</div>
-            </div>
-          </div>
-          <div class="tile-foot">
-            <h4>Turn your household into a guild.</h4>
-            <p>Chores become quests. Pick a class, earn XP, raid the weekend.</p>
-          <span class="tile-cta">View on App Store →</span></div>
-        </a>
-
-        <a class="app-tile" id="noty" href="https://apps.apple.com/us/app/noty-ai-daily-planner-focus/id1620951759" target="_blank" rel="noopener" style="--tile-from:#FBBF24; --tile-to:#EA580C;">
-          <div class="tile-bg"></div>
-          <div class="tile-top">
-            <span class="tile-cat">Productivity</span>
-            <span class="tile-plat">iOS</span>
-          </div>
-          <div class="tile-icon-row">
-            <img src="assets/products/noty.png" alt="Noty" />
-            <div class="tile-id">
-              <div class="tile-name">Noty</div>
-              <div class="tile-sub">AI-powered notes</div>
-            </div>
-          </div>
-          <div class="tile-foot">
-            <h4>A pocket notebook with AI built in.</h4>
-            <p>Capture, organize, summarize. Smart tags, threaded notes, keyboard-first.</p>
-          <span class="tile-cta">View on App Store →</span></div>
-        </a>
-
-        <a class="app-tile" id="nutrify" href="https://apps.apple.com/us/app/nutrify-supplement-tracker/id6753355163" target="_blank" rel="noopener" style="--tile-from:#6EE7B7; --tile-to:#0D9488;">
-          <div class="tile-bg"></div>
-          <div class="tile-top">
-            <span class="tile-cat">Health &amp; Fitness</span>
-            <span class="tile-plat">iOS</span>
-          </div>
-          <div class="tile-icon-row">
-            <img src="assets/products/nutrify.png" alt="Nutrify" />
-            <div class="tile-id">
-              <div class="tile-name">Nutrify</div>
-              <div class="tile-sub">Macros, no friction</div>
-            </div>
-          </div>
-          <div class="tile-foot">
-            <h4>Nutrition tracking without the friction.</h4>
-            <p>Snap a meal, get macros, move on. No 20-step entry flows.</p>
-          <span class="tile-cta">View on App Store →</span></div>
-        </a>
-
-        <a class="app-tile" id="nailai" href="https://apps.apple.com/us/app/nailai-nail-art-health/id6751233030" target="_blank" rel="noopener" style="--tile-from:#F472B6; --tile-to:#DB2777;">
-          <div class="tile-bg"></div>
-          <div class="tile-top">
-            <span class="tile-cat">Lifestyle</span>
-            <span class="tile-plat">iOS</span>
-          </div>
-          <div class="tile-icon-row">
-            <img src="assets/products/nailai.png" alt="NailAI" />
-            <div class="tile-id">
-              <div class="tile-name">NailAI</div>
-              <div class="tile-sub">AI nail design</div>
-            </div>
-          </div>
-          <div class="tile-foot">
-            <h4>An AI nail design studio.</h4>
-            <p>Generate, save, and share looks before the appointment.</p>
-          <span class="tile-cta">View on App Store →</span></div>
-        </a>
-
-        <a class="app-tile" id="shoppy" href="https://apps.apple.com/us/app/shoppy-shopping-list/id1621044552" target="_blank" rel="noopener" style="--tile-from:#22D3EE; --tile-to:#2563EB;">
-          <div class="tile-bg"></div>
-          <div class="tile-top">
-            <span class="tile-cat">Lifestyle</span>
-            <span class="tile-plat">iOS</span>
-          </div>
-          <div class="tile-icon-row">
-            <img src="assets/products/shoppy.png" alt="Shoppy" />
-            <div class="tile-id">
-              <div class="tile-name">Shoppy</div>
-              <div class="tile-sub">Shared shopping lists</div>
-            </div>
-          </div>
-          <div class="tile-foot">
-            <h4>Shopping lists, done right.</h4>
-            <p>Shared, sorted, synced. Recurring items and smart sections built in.</p>
-          <span class="tile-cta">View on App Store →</span></div>
-        </a>
-
-      </div>
-    </section>
-
-    
-
-    <section id="principles">
-      <div class="section-label">How we work</div>
-      <h2>Four principles. No fine print.</h2>
-      <p class="lede">A handful of rules we keep returning to whenever we sit down to build something new.</p>
-
-      <div class="principles">
-        <div class="principle">
-          <div class="num">01</div>
-          <div class="body">
-            <h3>On-device first</h3>
-            <p>If a task can be done on your Mac or phone, that's where we do it. Your files, your data, your machine — no detour through a server you didn't ask for.</p>
-          </div>
-        </div>
-        <div class="principle">
-          <div class="num">02</div>
-          <div class="body">
-            <h3>Native feel, every time</h3>
-            <p>SwiftUI on the Mac. React Native and Expo on iOS, with Swift, Kotlin, and Java dropped in wherever a real platform API is the only honest answer. Whatever the stack underneath, the app on top should feel fast, quiet, and at home on the system it runs on.</p>
-          </div>
-        </div>
-        <div class="principle">
-          <div class="num">03</div>
-          <div class="body">
-            <h3>Buy once when we can</h3>
-            <p>One-time pricing wherever it makes sense. We don't put a meter on tools that should simply work — and we never charge twice for the same feature.</p>
-          </div>
-        </div>
-        <div class="principle">
-          <div class="num">04</div>
-          <div class="body">
-            <h3>Range over a single bet</h3>
-            <p>One studio, many apps — across utilities, health, lifestyle, productivity, and developer tools. Ideas worth building rarely live in one category, and shipping across them keeps the work honest.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-  </div>
-
-  <footer>
-    <div class="links">
-      <a href="#products">Products</a>
-      <a href="#principles">Principles</a>
-      <a href="privacy.html">Privacy</a>
-      <a href="mailto:hello@coursion.studio">hello@coursion.studio</a>
-      <a href="https://github.com/kurayogun" target="_blank" rel="noopener">GitHub</a>
+  <header class="site-head">
+    <div class="wrap">
+      <a class="brand" href="./" aria-label="Coursion Studio, home">
+        <img src="assets/icon-512.png" alt="" width="30" height="30" />
+        Coursion Studio
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="#mac">Mac apps</a>
+        <a href="#iphone">iPhone apps</a>
+        <a href="#how">How we work</a>
+        <a class="nav-contact" href="#contact">Contact</a>
+      </nav>
     </div>
-    <div>© Coursion Studio. Built in Swift, TypeScript, and good taste.</div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap hero-grid">
+        <div>
+          <h1 id="hero-title">Small, native apps for Mac and iPhone.</h1>
+          <p class="hero-lede">Coursion Studio is an independent studio. We make focused tools: a Mac toolkit, a drawer of everyday utilities, AI usage tracking, developer tools for working with coding agents, and a few iPhone apps for daily life. They do their work on your device, and where it fits, you pay once.</p>
+          <div class="hero-actions">
+            <a class="btn btn-solid" href="#mac">See the Mac apps <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            <a class="btn btn-line" href="#iphone">See the iPhone apps</a>
+          </div>
+        </div>
+
+        <nav class="catalog" aria-labelledby="catalog-title">
+          <div class="catalog-head">
+            <h2 id="catalog-title">Everything we make</h2>
+            <span>9 apps</span>
+          </div>
+          <ul>
+            <li class="catalog-group" aria-hidden="true">Mac</li>
+            <li><a href="#knack" style="--c:#e25cf0"><img src="assets/icons/knack.webp" alt="" width="40" height="40" /><span><span class="c-name">Knack</span><span class="c-what">Twenty on-device tools in one window</span></span><span class="c-plat">App Store<span class="c-arrow" aria-hidden="true">→</span></span></a></li>
+            <li><a href="#aistats" style="--c:#4f8fff"><img src="assets/icons/aistats.webp" alt="" width="40" height="40" /><span><span class="c-name">AI Stats</span><span class="c-what">Your AI usage limits, at a glance</span></span><span class="c-plat">App Store<span class="c-arrow" aria-hidden="true">→</span></span></a></li>
+            <li><a href="#hutch" style="--c:#ff8a5c"><img src="assets/icons/hutch.webp" alt="" width="40" height="40" /><span><span class="c-name">Hutch</span><span class="c-what">Launcher, file shelf and four more utilities</span></span><span class="c-plat">Early access<span class="c-arrow" aria-hidden="true">→</span></span></a></li>
+            <li><a href="#rift" style="--c:#ff4f8b"><img src="assets/icons/rift.webp" alt="" width="40" height="40" /><span><span class="c-name">Rift</span><span class="c-what">Review the code your AI agent wrote</span></span><span class="c-plat">Download<span class="c-arrow" aria-hidden="true">→</span></span></a></li>
+            <li><a href="#forge" style="--c:#b8d14f"><img src="assets/icons/forge.webp" alt="" width="40" height="40" /><span><span class="c-name">Forge</span><span class="c-what">An agent-first IDE on your own Mac</span></span><span class="c-plat">Download<span class="c-arrow" aria-hidden="true">→</span></span></a></li>
+            <li><a href="#dpm" style="--c:#4fd1a5"><img src="assets/icons/dpm.webp" alt="" width="40" height="40" /><span><span class="c-name">Device Performance Monitor</span><span class="c-what">Live memory, CPU and FPS for your mobile app</span></span><span class="c-plat">Download<span class="c-arrow" aria-hidden="true">→</span></span></a></li>
+            <li class="catalog-group" aria-hidden="true">iPhone</li>
+            <li><a href="#noty" style="--c:#ffb547"><img src="assets/icons/noty.webp" alt="" width="40" height="40" /><span><span class="c-name">Noty</span><span class="c-what">A daily planner that starts fresh each day</span></span><span class="c-plat">App Store<span class="c-arrow" aria-hidden="true">→</span></span></a></li>
+            <li><a href="#nutrify" style="--c:#4fd1a5"><img src="assets/icons/nutrify.webp" alt="" width="40" height="40" /><span><span class="c-name">Nutrify</span><span class="c-what">Supplement and vitamin tracker</span></span><span class="c-plat">App Store<span class="c-arrow" aria-hidden="true">→</span></span></a></li>
+            <li><a href="#nailai" style="--c:#ff6fae"><img src="assets/icons/nailai.webp" alt="" width="40" height="40" /><span><span class="c-name">NailAI</span><span class="c-what">Try nail designs on your own hands</span></span><span class="c-plat">App Store<span class="c-arrow" aria-hidden="true">→</span></span></a></li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+
+    <div class="wrap">
+      <section id="mac" aria-labelledby="mac-title">
+        <div class="section-intro">
+          <h2 id="mac-title">For the Mac</h2>
+          <p>Native SwiftUI apps, each built around one job you'd otherwise hand to three apps, a website or a terminal window.</p>
+        </div>
+
+        <article class="product product-knack" id="knack" aria-labelledby="knack-title">
+          <div class="product-grid">
+            <div class="product-copy">
+              <div class="product-id">
+                <img src="assets/icons/knack.webp" alt="" width="56" height="56" />
+                <div><div class="name">Knack</div><div class="kind">Toolkit for macOS</div></div>
+              </div>
+              <h3 id="knack-title">Twenty tools your Mac was missing.</h3>
+              <p>Convert images, shrink and merge PDFs, pull text out of scans, transcribe audio, cut out backgrounds and turn one picture into a full app icon set. Every tool runs on your Mac with Apple's own frameworks. No uploads, no account.</p>
+              <dl class="facts">
+                <div><dt>Price</dt><dd>Free · Pro $4.99 once</dd></div>
+                <div><dt>Runs on</dt><dd>macOS 15+, Apple silicon</dd></div>
+              </dl>
+              <div class="product-actions">
+                <a class="btn btn-solid" href="https://apps.apple.com/us/app/knack-all-in-one-toolkit/id6762058455">Get Knack on the Mac App Store</a>
+                <a class="btn btn-line" href="https://knack.coursion.studio">Visit the site <svg aria-hidden="true"><use href="#i-out"/></svg></a>
+              </div>
+            </div>
+            <figure class="shot">
+              <img src="assets/shots/knack.webp" width="1600" height="1008" loading="lazy" decoding="async" alt="Knack's home window: a searchable grid of tools including Image Converter, PDF Toolkit, Text Extractor, App Icon Generator and AI Background Remover." />
+            </figure>
+          </div>
+        </article>
+
+        <article class="product product-aistats flip" id="aistats" aria-labelledby="aistats-title">
+          <div class="product-grid">
+            <div class="product-copy">
+              <div class="product-id">
+                <img src="assets/icons/aistats.webp" alt="" width="56" height="56" />
+                <div><div class="name">AI Stats</div><div class="kind">For Mac, iPhone and iPad</div></div>
+              </div>
+              <h3 id="aistats-title">Know how much AI you have left.</h3>
+              <p>AI Stats tracks the usage limits on the AI accounts you already pay for, including Claude, ChatGPT, Codex and Gemini, and shows them in your menu bar, in widgets and on your iPhone Lock Screen. There's no AI Stats account and no AI Stats server. Your credentials stay in your Keychain.</p>
+              <dl class="facts">
+                <div><dt>Price</dt><dd>Free for one account · Pro is a one-time purchase</dd></div>
+                <div><dt>Runs on</dt><dd>macOS 14+, iOS 18+</dd></div>
+              </dl>
+              <div class="product-actions">
+                <a class="btn btn-solid" href="https://apps.apple.com/us/app/aistats-ai-usage-tracker/id6762005507">Get AI Stats on the App Store</a>
+                <a class="btn btn-line" href="https://aistats.coursion.studio">Visit the site <svg aria-hidden="true"><use href="#i-out"/></svg></a>
+              </div>
+            </div>
+            <figure class="shot">
+              <img src="assets/shots/aistats.webp" width="1600" height="1008" loading="lazy" decoding="async" alt="AI Stats' Live dashboard showing five-hour and seven-day usage for a Claude account, with weekly limits and a list of connected providers." />
+            </figure>
+          </div>
+        </article>
+
+        <article class="product product-hutch" id="hutch" aria-labelledby="hutch-title">
+          <div class="product-grid">
+            <div class="product-copy">
+              <div class="product-id">
+                <img src="assets/icons/hutch.webp" alt="" width="56" height="56" />
+                <div><div class="name">Hutch</div><div class="kind">Utilities for macOS</div></div>
+              </div>
+              <h3 id="hutch-title">Six Mac utilities in one drawer.</h3>
+              <p>Pounce opens apps, does sums and finds files from ⌘Space. Stash holds files mid-drag. Toggles puts your most-used switches in the menu bar. Window Manager snaps windows from the keyboard, Browser Picker sends each link to the right browser, and Reaper finds what's draining your battery.</p>
+              <ul class="tools" aria-label="The six tools">
+                <li><b>Pounce</b></li><li><b>Stash</b></li><li><b>Toggles</b></li><li><b>Window Manager</b></li><li><b>Browser Picker</b></li><li><b>Reaper</b></li>
+              </ul>
+              <dl class="facts">
+                <div><dt>Price</dt><dd>$29 once, two Macs, every 1.x update</dd></div>
+                <div><dt>Free forever</dt><dd>Toggles, Window Manager, Browser Picker</dd></div>
+                <div><dt>Trial</dt><dd>14 days, no card needed</dd></div>
+                <div><dt>Status</dt><dd><span class="status soon">Paused before launch</span></dd></div>
+              </dl>
+              <div class="product-actions">
+                <a class="btn btn-solid" href="https://hutch.coursion.studio/#early-access">Join the early access list</a>
+                <a class="btn btn-line" href="https://hutch.coursion.studio">Take the tour <svg aria-hidden="true"><use href="#i-out"/></svg></a>
+              </div>
+            </div>
+            <figure class="shot small">
+              <img src="assets/shots/hutch-pounce.webp" width="800" height="480" loading="lazy" decoding="async" alt="Hutch's Pounce launcher listing its search scopes: Apps, Files, Clipboard, Windows, Toggles, Actions, Shortcuts and Scripts." />
+            </figure>
+          </div>
+        </article>
+
+        <article class="product product-rift flip" id="rift" aria-labelledby="rift-title">
+          <div class="product-grid">
+            <div class="product-copy">
+              <div class="product-id">
+                <img src="assets/icons/rift.webp" alt="" width="56" height="56" />
+                <div><div class="name">Rift</div><div class="kind">Code review for macOS</div></div>
+              </div>
+              <h3 id="rift-title">Trust the code your agent wrote.</h3>
+              <p>Rift reviews AI-generated code before it merges. An on-device model triages every staged diff, Claude takes a deeper look at the risky ones using your own key, and the blame gutter names the agent session behind each line.</p>
+              <dl class="facts">
+                <div><dt>Runs on</dt><dd>macOS 26+, Apple silicon</dd></div>
+                <div><dt>Updates</dt><dd>Built in, via Sparkle</dd></div>
+              </dl>
+              <div class="product-actions">
+                <a class="btn btn-solid" href="https://github.com/Coursion-Studio/rift-website/releases/latest"><svg aria-hidden="true"><use href="#i-down"/></svg> Download Rift</a>
+                <a class="btn btn-line" href="https://rift.coursion.studio">Visit the site <svg aria-hidden="true"><use href="#i-out"/></svg></a>
+              </div>
+            </div>
+            <figure class="shot">
+              <img src="assets/shots/rift.webp" width="1600" height="1004" loading="lazy" decoding="async" alt="Rift's editor with a project file tree, a Swift file open, a minimap and a Review button in the toolbar." />
+            </figure>
+          </div>
+        </article>
+
+        <article class="product product-forge" id="forge" aria-labelledby="forge-title">
+          <div class="product-grid">
+            <div class="product-copy">
+              <div class="product-id">
+                <img src="assets/icons/forge.webp" alt="" width="56" height="56" />
+                <div><div class="name">Forge</div><div class="kind">Agent workbench for macOS</div></div>
+              </div>
+              <h3 id="forge-title">A cloud-shaped IDE, on your own Mac.</h3>
+              <p>Open a project and get a workspace with everything a coding agent needs: terminals that keep running, AI chat on your own keys, a browser, code review and voice dictation. No VMs, no containers, no servers.</p>
+              <dl class="facts">
+                <div><dt>Runs on</dt><dd>macOS 15+</dd></div>
+                <div><dt>Updates</dt><dd>Built in, via Sparkle</dd></div>
+              </dl>
+              <div class="product-actions">
+                <a class="btn btn-solid" href="https://github.com/Coursion-Studio/forge/releases/latest"><svg aria-hidden="true"><use href="#i-down"/></svg> Download Forge</a>
+                <a class="btn btn-line" href="https://forge.coursion.studio">Visit the site <svg aria-hidden="true"><use href="#i-out"/></svg></a>
+              </div>
+            </div>
+            <figure class="shot">
+              <img src="assets/shots/forge.webp" width="1600" height="1130" loading="lazy" decoding="async" alt="A Forge workspace with a Claude Code terminal, a task board and a browser pane side by side." />
+            </figure>
+          </div>
+        </article>
+
+        <article class="product product-dpm flip" id="dpm" aria-labelledby="dpm-title">
+          <div class="product-grid">
+            <div class="product-copy">
+              <div class="product-id">
+                <img src="assets/icons/dpm.webp" alt="" width="56" height="56" />
+                <div><div class="name">Device Performance Monitor</div><div class="kind">Mobile profiling for macOS</div></div>
+              </div>
+              <h3 id="dpm-title">See what your app does to a phone.</h3>
+              <p>Watch one app's memory, CPU, threads and frame rate live on an Android phone, the iOS Simulator or a real iPhone. Then let an AI read the session, or reach for bundle size, startup timing, a jank timeline and a <code>dpm</code> command line for CI.</p>
+              <dl class="facts">
+                <div><dt>Price</dt><dd>Free</dd></div>
+                <div><dt>Runs on</dt><dd>macOS 14+, Apple silicon and Intel</dd></div>
+              </dl>
+              <div class="product-actions">
+                <a class="btn btn-solid" href="https://github.com/Coursion-Studio/device-performance-monitor-website/releases/latest"><svg aria-hidden="true"><use href="#i-down"/></svg> Download for Mac</a>
+                <a class="btn btn-line" href="https://dpm.coursion.studio">Visit the site <svg aria-hidden="true"><use href="#i-out"/></svg></a>
+              </div>
+            </div>
+            <figure class="shot">
+              <img src="assets/shots/dpm.webp" width="1600" height="851" loading="lazy" decoding="async" alt="Device Performance Monitor charting an iOS Simulator app's memory and CPU over time, with app memory, CPU, thread count and session change at the top." />
+            </figure>
+          </div>
+        </article>
+      </section>
+
+      <section id="iphone" aria-labelledby="iphone-title">
+        <div class="section-intro">
+          <h2 id="iphone-title">For iPhone</h2>
+          <p>Everyday apps built with Expo and React Native, with native Swift wherever the platform asks for it.</p>
+        </div>
+
+        <div class="phones">
+          <article class="phone-app" id="noty" style="--c:#ffb547">
+            <img src="assets/icons/noty.webp" alt="" width="88" height="88" loading="lazy" />
+            <div>
+              <div class="top"><h3>Noty</h3><span class="cat">Productivity</span></div>
+              <p>A daily planner that resets at midnight, so there's no backlog waiting for you. Tell it "plan my morning" or "find a slot for the gym" and it fits the day around you.</p>
+              <a class="store" href="https://apps.apple.com/us/app/noty-ai-daily-planner-focus/id1620951759">Get Noty on the App Store <svg aria-hidden="true"><use href="#i-out"/></svg></a>
+            </div>
+          </article>
+
+          <article class="phone-app" id="nutrify" style="--c:#4fd1a5">
+            <img src="assets/icons/nutrify.webp" alt="" width="88" height="88" loading="lazy" />
+            <div>
+              <div class="top"><h3>Nutrify</h3><span class="cat">Health &amp; Fitness</span></div>
+              <p>Keep track of supplements, vitamins and medications. Flexible schedules, dose logging, reminders and streaks help you stay consistent.</p>
+              <a class="store" href="https://apps.apple.com/us/app/nutrify-supplement-tracker/id6753355163">Get Nutrify on the App Store <svg aria-hidden="true"><use href="#i-out"/></svg></a>
+            </div>
+          </article>
+
+          <article class="phone-app" id="nailai" style="--c:#ff6fae">
+            <img src="assets/icons/nailai.webp" alt="" width="88" height="88" loading="lazy" />
+            <div>
+              <div class="top"><h3>NailAI</h3><span class="cat">Lifestyle</span></div>
+              <p>Photograph your nails and NailAI renders new nail art onto your own hands, from a growing set of themes. It also gives you nail wellness insights.</p>
+              <a class="store" href="https://apps.apple.com/us/app/nailai-nail-art-health/id6751233030">Get NailAI on the App Store <svg aria-hidden="true"><use href="#i-out"/></svg></a>
+            </div>
+          </article>
+
+          <article class="phone-app" id="aistats-ios" style="--c:#4f8fff">
+            <img src="assets/icons/aistats.webp" alt="" width="88" height="88" loading="lazy" />
+            <div>
+              <div class="top"><h3>AI Stats</h3><span class="cat">Productivity</span></div>
+              <p>Your AI usage limits on the Home Screen and Lock Screen, with a refresh button on the widget. One purchase covers iPhone, iPad and Mac.</p>
+              <a class="store" href="https://apps.apple.com/us/app/aistats-ai-usage-tracker/id6762005507">Get AI Stats on the App Store <svg aria-hidden="true"><use href="#i-out"/></svg></a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="how" aria-labelledby="how-title">
+        <div class="section-intro">
+          <h2 id="how-title">How we work</h2>
+          <p>The rules we come back to every time we start something new.</p>
+        </div>
+        <div class="principles">
+          <div class="principle">
+            <h3>Your device first</h3>
+            <p>If a job can run on your Mac or phone, that's where it runs. Your files and data don't take a detour through a server you never asked for.</p>
+          </div>
+          <div class="principle">
+            <h3>Native, whatever the stack</h3>
+            <p>SwiftUI on the Mac. React Native and Expo on iPhone, with Swift and Kotlin wherever a real platform API is the honest answer. Whatever sits underneath, the app should feel quick, quiet and at home.</p>
+          </div>
+          <div class="principle">
+            <h3>Pay once where we can</h3>
+            <p>Our Mac apps are free or a one-time purchase. When an app has a running cost behind it, like AI features on iPhone, it may use a subscription, and the App Store page says so up front.</p>
+          </div>
+          <div class="principle">
+            <h3>Range over a single bet</h3>
+            <p>One studio, many apps: utilities, developer tools, health, productivity and lifestyle. Good ideas rarely stay in one category, and shipping across them keeps the work honest.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact" aria-labelledby="contact-title">
+        <div class="contact-grid">
+          <div>
+            <h2 id="contact-title">A question, a bug or an idea?</h2>
+            <p>Email goes straight to the people who build the apps. Press and partnership requests are welcome too.</p>
+          </div>
+          <a class="mail" href="mailto:hello@coursion.studio">hello@coursion.studio</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <span>© 2026 Coursion Studio</span>
+      <nav aria-label="Footer">
+        <a href="#mac">Mac apps</a>
+        <a href="#iphone">iPhone apps</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="https://github.com/kuraydev">GitHub</a>
+      </nav>
+    </div>
   </footer>
+
+  <script>
+    (function () {
+      var head = document.querySelector(".site-head");
+      function onScroll() { head.classList.toggle("scrolled", window.scrollY > 8); }
+      onScroll();
+      window.addEventListener("scroll", onScroll, { passive: true });
+    })();
+  </script>
 </body>
 </html>
