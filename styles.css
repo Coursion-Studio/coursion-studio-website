@@ -437,6 +437,9 @@ p { margin: 0; text-wrap: pretty; }
 .product-aistats { --c: #4f8fff; --c-soft: rgba(79, 143, 255, 0.22); }
 .product-hutch { --c: #ff8a5c; --c-soft: rgba(255, 128, 92, 0.2); }
 .product-dpm { --c: #4fd1a5; --c-soft: rgba(79, 209, 165, 0.15); }
+.product-foyer { --c: #e8a54b; --c-soft: rgba(232, 165, 75, 0.18); }
+.product-cue { --c: #c86bff; --c-soft: rgba(200, 107, 255, 0.2); }
+.product-vista { --c: #ff8a6b; --c-soft: rgba(255, 138, 107, 0.18); }
 
 code {
   font-family: ui-monospace, "SF Mono", Menlo, monospace;
