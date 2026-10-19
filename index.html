@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Coursion Studio · Small, native apps for Mac and mobile</title>
-  <meta name="description" content="Coursion Studio is an independent studio making focused native apps: Foyer, Knack, AI Stats, Hutch, Cue, Device Performance Monitor and Vista for Mac, plus Sage and Noty on mobile." />
+  <title>Coursion Studio · We make the apps we wish we had</title>
+  <meta name="description" content="Coursion Studio is an independent studio making focused native apps: Hutch, AI Stats, Foyer, Knack, Device Performance Monitor, Vista and Cue for Mac, plus Sage and Noty on mobile." />
   <meta name="author" content="Coursion Studio" />
   <meta name="robots" content="index, follow, max-image-preview:large" />
   <link rel="canonical" href="https://coursion.studio/" />
@@ -15,23 +15,33 @@
   <link rel="icon" type="image/png" sizes="512x512" href="assets/icon-512.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
   <link rel="preload" href="assets/fonts/bricolage-grotesque-latin.woff2" as="font" type="font/woff2" crossorigin />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css?v=cards1" />
+  <link rel="stylesheet" href="demos/demo.css?v=3" />
+  <link rel="stylesheet" href="demos/foyer.css?v=3" />
+  <link rel="stylesheet" href="demos/knack.css?v=2" />
+  <link rel="stylesheet" href="demos/aistats.css?v=2" />
+  <link rel="stylesheet" href="demos/hutch.css?v=2" />
+  <link rel="stylesheet" href="demos/cue.css?v=2" />
+  <link rel="stylesheet" href="demos/dpm.css?v=2" />
+  <link rel="stylesheet" href="demos/vista.css?v=3" />
+  <link rel="stylesheet" href="demos/sage.css?v=2" />
+  <link rel="stylesheet" href="demos/noty.css?v=2" />
 
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Coursion Studio" />
-  <meta property="og:title" content="Coursion Studio · Small, native apps for Mac and mobile" />
+  <meta property="og:title" content="Coursion Studio · We make the apps we wish we had" />
   <meta property="og:description" content="An independent studio making focused native software for Mac and mobile. On your device by default. Pay once where it fits." />
-  <meta property="og:image" content="https://coursion.studio/assets/og.png" />
+  <meta property="og:image" content="https://coursion.studio/assets/og.png?v=3" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
-  <meta property="og:image:alt" content="Coursion Studio: small, native apps for Mac and mobile" />
+  <meta property="og:image:alt" content="Coursion Studio: native apps for Mac and iPhone" />
   <meta property="og:url" content="https://coursion.studio/" />
   <meta property="og:locale" content="en_US" />
 
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Coursion Studio · Small, native apps for Mac and mobile" />
+  <meta name="twitter:title" content="Coursion Studio · We make the apps we wish we had" />
   <meta name="twitter:description" content="An independent studio making focused native software for Mac and mobile. On your device by default. Pay once where it fits." />
-  <meta name="twitter:image" content="https://coursion.studio/assets/og.png" />
+  <meta name="twitter:image" content="https://coursion.studio/assets/og.png?v=3" />
 
   <meta name="theme-color" content="#0d0c1f" />
   <meta name="color-scheme" content="dark" />
@@ -94,35 +104,53 @@
 
   <main id="main">
     <section class="hero" aria-labelledby="hero-title">
-      <div class="wrap hero-grid">
-        <div>
-          <h1 id="hero-title">Small, native apps for Mac and mobile.</h1>
-          <p class="hero-lede">Coursion Studio is an independent studio. We make focused tools: a work calendar that answers invitations, a Mac toolkit, a drawer of everyday utilities, a terminal, AI usage tracking, break reminders, a performance monitor for mobile developers, and a few mobile apps for daily life. They do their work on your device, and where it fits, you pay once.</p>
+      <div class="wrap">
+        <div class="hero-copy">
+          <p class="hero-kicker"><span aria-hidden="true"></span>Independent studio · 9 apps</p>
+          <h1 id="hero-title">We make the apps <span class="knot-text">we wish we had.</span></h1>
+          <p class="hero-lede">Made for Mac and iPhone. They run on your device, need no account, and where it fits, you pay once.</p>
           <div class="hero-actions">
             <a class="btn btn-solid" href="#mac">See the Mac apps <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
             <a class="btn btn-line" href="#mobile">See the mobile apps</a>
           </div>
         </div>
 
-        <nav class="catalog" aria-labelledby="catalog-title">
-          <div class="catalog-head">
-            <h2 id="catalog-title">Everything we make</h2>
-            <span>9 apps</span>
+        <div class="desk" style="--c:#ff8a5c" data-desk>
+          <div class="desk-bar">
+            <img class="desk-logo" src="assets/icons/hutch.webp" alt="" width="20" height="20" data-desk-logo />
+            <b class="desk-name" data-desk-name>Hutch</b>
+            <span class="desk-what" data-desk-what>Launcher, file shelf and four more utilities</span>
+            <span class="desk-status" data-desk-status>Early access</span>
+            <a class="desk-more" href="#hutch" data-desk-more>Read more <svg aria-hidden="true"><use href="#i-down"/></svg></a>
           </div>
-          <ul>
-            <li class="catalog-group" aria-hidden="true">Mac</li>
-            <li><a href="#foyer" style="--c:#e8a54b"><img src="assets/icons/foyer.webp" alt="" width="40" height="40" /><span><span class="c-name">Foyer <span class="c-os">+ iPhone</span></span><span class="c-what">A work calendar that answers invitations</span></span><span class="c-plat">Coming soon<span class="c-arrow" aria-hidden="true">→</span></span></a></li>
-            <li><a href="#knack" style="--c:#e25cf0"><img src="assets/icons/knack.webp" alt="" width="40" height="40" /><span><span class="c-name">Knack</span><span class="c-what">Twenty on-device tools in one window</span></span><span class="c-plat">App Store<span class="c-arrow" aria-hidden="true">→</span></span></a></li>
-            <li><a href="#aistats" style="--c:#4f8fff"><img src="assets/icons/aistats.webp" alt="" width="40" height="40" /><span><span class="c-name">AI Stats</span><span class="c-what">Your AI usage limits, at a glance</span></span><span class="c-plat">App Store<span class="c-arrow" aria-hidden="true">→</span></span></a></li>
-            <li><a href="#hutch" style="--c:#ff8a5c"><img src="assets/icons/hutch.webp" alt="" width="40" height="40" /><span><span class="c-name">Hutch</span><span class="c-what">Launcher, file shelf and four more utilities</span></span><span class="c-plat">Early access<span class="c-arrow" aria-hidden="true">→</span></span></a></li>
-            <li><a href="#cue" style="--c:#c86bff"><img src="assets/icons/cue.webp" alt="" width="40" height="40" /><span><span class="c-name">Cue</span><span class="c-what">A terminal that doesn't feel like one</span></span><span class="c-plat">Download<span class="c-arrow" aria-hidden="true">→</span></span></a></li>
-            <li><a href="#dpm" style="--c:#4fd1a5"><img src="assets/icons/dpm.webp" alt="" width="40" height="40" /><span><span class="c-name">Device Performance Monitor</span><span class="c-what">Live memory, CPU and FPS for your mobile app</span></span><span class="c-plat">Download<span class="c-arrow" aria-hidden="true">→</span></span></a></li>
-            <li><a href="#vista" style="--c:#ff8a6b"><img src="assets/icons/vista.webp" alt="" width="40" height="40" /><span><span class="c-name">Vista</span><span class="c-what">Eye and movement breaks for the Mac</span></span><span class="c-plat">Coming soon<span class="c-arrow" aria-hidden="true">→</span></span></a></li>
-            <li class="catalog-group" aria-hidden="true">Mobile</li>
-            <li><a href="#sage" style="--c:#3ddc97"><img src="assets/icons/sage.webp" alt="" width="40" height="40" /><span><span class="c-name">Sage <span class="c-os">iOS</span></span><span class="c-what">Longevity coach: supplements, fasting, water</span></span><span class="c-plat">App Store<span class="c-arrow" aria-hidden="true">→</span></span></a></li>
-            <li><a href="#noty" style="--c:#ffb547"><img src="assets/icons/noty.webp" alt="" width="40" height="40" /><span><span class="c-name">Noty <span class="c-os">iOS</span></span><span class="c-what">A daily planner that starts fresh each day</span></span><span class="c-plat">App Store<span class="c-arrow" aria-hidden="true">→</span></span></a></li>
-          </ul>
-        </nav>
+
+          <div class="desk-screen">
+            <p class="desk-caption" aria-live="polite"><span data-cap-dots aria-hidden="true"></span><span data-cap-text></span></p>
+            <div class="desk-win scene" data-win="foyer" data-demo="foyer" data-kind="mac" aria-hidden="true"></div>
+            <div class="desk-win scene" data-win="knack" data-demo="knack" data-kind="mac" aria-hidden="true"></div>
+            <div class="desk-win scene" data-win="aistats" data-demo="aistats" data-kind="mac" aria-hidden="true"></div>
+            <div class="desk-win scene is-on" data-win="hutch" data-demo="hutch" data-kind="mac" aria-hidden="true"></div>
+            <div class="desk-win scene" data-win="cue" data-demo="cue" data-kind="mac" aria-hidden="true"></div>
+            <div class="desk-win scene" data-win="dpm" data-demo="dpm" data-kind="mac" aria-hidden="true"></div>
+            <div class="desk-win scene" data-win="vista" data-demo="vista" data-kind="mac" aria-hidden="true"></div>
+            <div class="desk-win scene" data-win="sage" data-demo="sage" data-kind="phone" aria-hidden="true"></div>
+            <div class="desk-win scene" data-win="noty" data-demo="noty" data-kind="phone" aria-hidden="true"></div>
+            <nav class="dock" aria-label="Everything we make">
+              <a href="#hutch" aria-current="true" data-app="hutch" data-about="Six Mac tools in one menu bar drawer: a ⌘Space launcher, window snapping, a file shelf, hidden system switches, link routing and a battery reaper. Keep the ones you want." data-name="Hutch" data-what="Launcher, file shelf and four more utilities" data-status="Early access" style="--c:#ff8a5c"><img src="assets/icons/hutch.webp" alt="" width="56" height="56" /><span class="dock-tip">Hutch</span></a>
+              <a href="#aistats" data-app="aistats" data-about="Tracks the usage limits on the AI accounts you already pay for, like Claude, ChatGPT, Codex and Gemini, in your menu bar, widgets and Lock Screen. Your keys stay in your Keychain." data-name="AI Stats" data-what="Your AI usage limits, at a glance" data-status="App Store" style="--c:#4f8fff"><img src="assets/icons/aistats.webp" alt="" width="56" height="56" /><span class="dock-tip">AI Stats</span></a>
+              <a href="#foyer" data-app="foyer" data-about="A calendar for work. Answer invites in place through your own Google, Microsoft or iCloud account, see conflicts side by side, and join the next call from the menu bar." data-name="Foyer" data-what="A work calendar that answers invitations" data-status="Coming soon" style="--c:#e8a54b"><img src="assets/icons/foyer.webp" alt="" width="56" height="56" /><span class="dock-tip">Foyer</span></a>
+              <a href="#knack" data-app="knack" data-about="Convert images, shrink and merge PDFs, pull text out of scans, cut out backgrounds and make app icon sets. Every tool runs on your Mac. No uploads, no account." data-name="Knack" data-what="Twenty on-device tools in one window" data-status="App Store" style="--c:#e25cf0"><img src="assets/icons/knack.webp" alt="" width="56" height="56" /><span class="dock-tip">Knack</span></a>
+              <a href="#dpm" data-app="dpm" data-about="Watch one app's memory, CPU, threads and frame rate live on an Android phone, the iOS Simulator or a real iPhone, then let an AI read the session." data-name="Device Performance Monitor" data-what="Live memory, CPU and FPS for your mobile app" data-status="Download" style="--c:#4fd1a5"><img src="assets/icons/dpm.webp" alt="" width="56" height="56" /><span class="dock-tip">Device Performance Monitor</span></a>
+              <a href="#vista" data-app="vista" data-about="20-20-20 breaks for your eyes and a nudge to move every 45 minutes. Vista waits out calls and busy moments, then lands each break at a good time." data-name="Vista" data-what="Eye and movement breaks for the Mac" data-status="Coming soon" style="--c:#ff8a6b"><img src="assets/icons/vista.webp" alt="" width="56" height="56" /><span class="dock-tip">Vista</span></a>
+              <a href="#cue" data-app="cue" data-about="Every command comes back as its own card with its exit code and timing. A ⌘K palette, git that follows the folder you're in, and Claude one keystroke away when something fails." data-name="Cue" data-what="A terminal that doesn't feel like one" data-status="Download" style="--c:#c86bff"><img src="assets/icons/cue.webp" alt="" width="56" height="56" /><span class="dock-tip">Cue</span></a>
+              <span class="dock-sep" aria-hidden="true"></span>
+              <a href="#sage" data-app="sage" data-about="Track supplements, water, fasting and routines on your iPhone, read your Pulse metrics, and ask an AI coach what to change next." data-name="Sage" data-what="Longevity coach for iPhone: supplements, fasting, water" data-status="App Store" style="--c:#3ddc97"><img src="assets/icons/sage.webp" alt="" width="56" height="56" /><span class="dock-tip">Sage · iOS</span></a>
+              <a href="#noty" data-app="noty" data-about="A daily planner that resets at midnight, so no backlog waits for you. Say “plan my morning” and it fits the day around you." data-name="Noty" data-what="A daily planner for iPhone that starts fresh each day" data-status="App Store" style="--c:#ffb547"><img src="assets/icons/noty.webp" alt="" width="56" height="56" /><span class="dock-tip">Noty · iOS</span></a>
+            </nav>
+          </div>
+
+          <p class="desk-about" data-desk-about>Six Mac tools in one menu bar drawer: a ⌘Space launcher, window snapping, a file shelf, hidden system switches, link routing and a battery reaper. Keep the ones you want.</p>
+        </div>
       </div>
     </section>
 
@@ -133,30 +161,70 @@
           <p>Native SwiftUI apps, each built around one job you'd otherwise hand to three apps, a website or a terminal window.</p>
         </div>
 
+        <article class="product product-hutch" id="hutch" aria-labelledby="hutch-title">
+          <div class="product-grid">
+            <div class="product-copy">
+              <div class="product-id">
+                <img src="assets/icons/hutch.webp" alt="" width="56" height="56" />
+                <div><div class="name">Hutch</div><div class="kind">Utilities for macOS</div></div>
+                <span class="id-status"><span class="status soon">Paused before launch</span></span>
+              </div>
+              <h3 id="hutch-title">Six Mac utilities in one drawer.</h3>
+              <p>Pounce opens apps, does sums and finds files from ⌘Space. Stash holds files mid-drag. Toggles puts your most-used switches in the menu bar. Window Manager snaps windows from the keyboard, Browser Picker sends each link to the right browser, and Reaper finds what's draining your battery.</p>
+              <ul class="facts-mini"><li><span>Price</span> $29 once, three Macs, every 1.x update</li><li><span>Free forever</span> Toggles, Window Manager, Browser Picker</li><li><span>Trial</span> 14 days, no card needed</li></ul>
+              <div class="product-actions">
+                <a class="btn btn-solid" href="https://hutch.coursion.studio/#early-access">Join the early access list</a>
+                <a class="btn btn-line" href="https://hutch.coursion.studio">Take the tour <svg aria-hidden="true"><use href="#i-out"/></svg></a>
+              </div>
+            </div>
+            <div class="stage" data-stage>
+              <p class="desk-caption" aria-live="off"><span data-cap-dots aria-hidden="true"></span><span data-cap-text></span></p>
+              <div class="scene is-on" data-demo="hutch" data-kind="mac" aria-hidden="true"></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="product product-aistats flip" id="aistats" aria-labelledby="aistats-title">
+          <div class="product-grid">
+            <div class="product-copy">
+              <div class="product-id">
+                <img src="assets/icons/aistats.webp" alt="" width="56" height="56" />
+                <div><div class="name">AI Stats</div><div class="kind">For Mac, iPhone and iPad</div></div>
+              </div>
+              <h3 id="aistats-title">Know how much AI you have left.</h3>
+              <p>AI Stats tracks the usage limits on the AI accounts you already pay for, including Claude, ChatGPT, Codex and Gemini, and shows them in your menu bar, in widgets and on your iPhone Lock Screen. There's no AI Stats account and no AI Stats server. Your credentials stay in your Keychain.</p>
+              <ul class="facts-mini"><li><span>Price</span> Free for one account · Pro is a one-time purchase</li><li><span>Runs on</span> macOS 14+, iOS 18+</li></ul>
+              <div class="product-actions">
+                <a class="btn btn-solid" href="https://apps.apple.com/us/app/aistats-ai-usage-tracker/id6762005507">Get AI Stats on the App Store</a>
+                <a class="btn btn-line" href="https://aistats.coursion.studio">Visit the site <svg aria-hidden="true"><use href="#i-out"/></svg></a>
+              </div>
+            </div>
+            <div class="stage" data-stage>
+              <p class="desk-caption" aria-live="off"><span data-cap-dots aria-hidden="true"></span><span data-cap-text></span></p>
+              <div class="scene is-on" data-demo="aistats" data-kind="mac" aria-hidden="true"></div>
+            </div>
+          </div>
+        </article>
+
         <article class="product product-foyer" id="foyer" aria-labelledby="foyer-title">
           <div class="product-grid">
             <div class="product-copy">
               <div class="product-id">
                 <img src="assets/icons/foyer.webp" alt="" width="56" height="56" />
                 <div><div class="name">Foyer</div><div class="kind">Work calendar for Mac and iPhone</div></div>
+                <span class="id-status"><span class="status soon">Coming to the App Store</span></span>
               </div>
               <h3 id="foyer-title">A work calendar that answers invitations.</h3>
               <p>Accept, Maybe or Decline right where you see the invite, through your own Google, Microsoft or iCloud account. The menu bar counts down to your next meeting with a one-click Join, conflicts open side by side, and extra time zones run down the hour rail. Widgets and a Live Activity keep the next meeting in view, and a local MCP server and <code>foyer</code> command line let your agents read the day.</p>
-              <ul class="tools" aria-label="Highlights">
-                <li><b>Invite inbox</b></li><li><b>Menu bar Join</b></li><li><b>Conflicts</b></li><li><b>Time zones</b></li><li><b>Widgets</b></li><li><b>MCP and CLI</b></li>
-              </ul>
-              <dl class="facts">
-                <div><dt>Price</dt><dd>Free, no account</dd></div>
-                <div><dt>Runs on</dt><dd>macOS 26+, iOS 26+</dd></div>
-                <div><dt>Status</dt><dd><span class="status soon">Coming to the App Store</span></dd></div>
-              </dl>
+              <ul class="facts-mini"><li><span>Price</span> Free, no account</li><li><span>Runs on</span> macOS 26+, iOS 26+</li></ul>
               <div class="product-actions">
                 <a class="btn btn-solid" href="https://foyer.coursion.studio">Take the tour <svg aria-hidden="true"><use href="#i-out"/></svg></a>
               </div>
             </div>
-            <figure class="shot">
-              <img src="assets/shots/foyer.webp" width="1100" height="720" loading="lazy" decoding="async" alt="Foyer's Mac window: calendar sets and time zones on the left, an agenda of upcoming meetings with Join buttons, and an inspector showing the next standup with a Join Google Meet button and its attendees." />
-            </figure>
+            <div class="stage" data-stage>
+              <p class="desk-caption" aria-live="off"><span data-cap-dots aria-hidden="true"></span><span data-cap-text></span></p>
+              <div class="scene is-on" data-demo="foyer" data-kind="mac" aria-hidden="true"></div>
+            </div>
           </div>
         </article>
 
@@ -169,71 +237,60 @@
               </div>
               <h3 id="knack-title">Twenty tools your Mac was missing.</h3>
               <p>Convert images, shrink and merge PDFs, pull text out of scans, transcribe audio, cut out backgrounds and turn one picture into a full app icon set. Every tool runs on your Mac with Apple's own frameworks. No uploads, no account.</p>
-              <dl class="facts">
-                <div><dt>Price</dt><dd>Free · Pro $4.99 once</dd></div>
-                <div><dt>Runs on</dt><dd>macOS 15+, Apple silicon</dd></div>
-              </dl>
+              <ul class="facts-mini"><li><span>Price</span> Free · Pro $4.99 once</li><li><span>Runs on</span> macOS 15+, Apple silicon</li></ul>
               <div class="product-actions">
                 <a class="btn btn-solid" href="https://apps.apple.com/us/app/knack-all-in-one-toolkit/id6762058455">Get Knack on the Mac App Store</a>
                 <a class="btn btn-line" href="https://knack.coursion.studio">Visit the site <svg aria-hidden="true"><use href="#i-out"/></svg></a>
               </div>
             </div>
-            <figure class="shot">
-              <img src="assets/shots/knack.webp" width="1600" height="1008" loading="lazy" decoding="async" alt="Knack's home window: a searchable grid of tools including Image Converter, PDF Toolkit, Text Extractor, App Icon Generator and AI Background Remover." />
-            </figure>
+            <div class="stage" data-stage>
+              <p class="desk-caption" aria-live="off"><span data-cap-dots aria-hidden="true"></span><span data-cap-text></span></p>
+              <div class="scene is-on" data-demo="knack" data-kind="mac" aria-hidden="true"></div>
+            </div>
           </div>
         </article>
 
-        <article class="product product-aistats" id="aistats" aria-labelledby="aistats-title">
+        <article class="product product-dpm" id="dpm" aria-labelledby="dpm-title">
           <div class="product-grid">
             <div class="product-copy">
               <div class="product-id">
-                <img src="assets/icons/aistats.webp" alt="" width="56" height="56" />
-                <div><div class="name">AI Stats</div><div class="kind">For Mac, iPhone and iPad</div></div>
+                <img src="assets/icons/dpm.webp" alt="" width="56" height="56" />
+                <div><div class="name">Device Performance Monitor</div><div class="kind">Mobile profiling for macOS</div></div>
               </div>
-              <h3 id="aistats-title">Know how much AI you have left.</h3>
-              <p>AI Stats tracks the usage limits on the AI accounts you already pay for, including Claude, ChatGPT, Codex and Gemini, and shows them in your menu bar, in widgets and on your iPhone Lock Screen. There's no AI Stats account and no AI Stats server. Your credentials stay in your Keychain.</p>
-              <dl class="facts">
-                <div><dt>Price</dt><dd>Free for one account · Pro is a one-time purchase</dd></div>
-                <div><dt>Runs on</dt><dd>macOS 14+, iOS 18+</dd></div>
-              </dl>
+              <h3 id="dpm-title">See what your app does to a phone.</h3>
+              <p>Watch one app's memory, CPU, threads and frame rate live on an Android phone, the iOS Simulator or a real iPhone. Then let an AI read the session, or reach for bundle size, startup timing, a jank timeline and a <code>dpm</code> command line for CI.</p>
+              <ul class="facts-mini"><li><span>Price</span> Free</li><li><span>Runs on</span> macOS 14+, Apple silicon and Intel</li></ul>
               <div class="product-actions">
-                <a class="btn btn-solid" href="https://apps.apple.com/us/app/aistats-ai-usage-tracker/id6762005507">Get AI Stats on the App Store</a>
-                <a class="btn btn-line" href="https://aistats.coursion.studio">Visit the site <svg aria-hidden="true"><use href="#i-out"/></svg></a>
+                <a class="btn btn-solid" href="https://github.com/Coursion-Studio/device-performance-monitor-website/releases/latest"><svg aria-hidden="true"><use href="#i-down"/></svg> Download for Mac</a>
+                <a class="btn btn-line" href="https://dpm.coursion.studio">Visit the site <svg aria-hidden="true"><use href="#i-out"/></svg></a>
               </div>
             </div>
-            <figure class="shot">
-              <img src="assets/shots/aistats.webp" width="1600" height="1008" loading="lazy" decoding="async" alt="AI Stats' Live dashboard showing five-hour and seven-day usage for a Claude account, with weekly limits and a list of connected providers." />
-            </figure>
+            <div class="stage" data-stage>
+              <p class="desk-caption" aria-live="off"><span data-cap-dots aria-hidden="true"></span><span data-cap-text></span></p>
+              <div class="scene is-on" data-demo="dpm" data-kind="mac" aria-hidden="true"></div>
+            </div>
           </div>
         </article>
 
-        <article class="product product-hutch flip" id="hutch" aria-labelledby="hutch-title">
+        <article class="product product-vista flip" id="vista" aria-labelledby="vista-title">
           <div class="product-grid">
             <div class="product-copy">
               <div class="product-id">
-                <img src="assets/icons/hutch.webp" alt="" width="56" height="56" />
-                <div><div class="name">Hutch</div><div class="kind">Utilities for macOS</div></div>
+                <img src="assets/icons/vista.webp" alt="" width="56" height="56" />
+                <div><div class="name">Vista</div><div class="kind">Breaks for macOS</div></div>
+                <span class="id-status"><span class="status soon">Coming soon</span></span>
               </div>
-              <h3 id="hutch-title">Six Mac utilities in one drawer.</h3>
-              <p>Pounce opens apps, does sums and finds files from ⌘Space. Stash holds files mid-drag. Toggles puts your most-used switches in the menu bar. Window Manager snaps windows from the keyboard, Browser Picker sends each link to the right browser, and Reaper finds what's draining your battery.</p>
-              <ul class="tools" aria-label="The six tools">
-                <li><b>Pounce</b></li><li><b>Stash</b></li><li><b>Toggles</b></li><li><b>Window Manager</b></li><li><b>Browser Picker</b></li><li><b>Reaper</b></li>
-              </ul>
-              <dl class="facts">
-                <div><dt>Price</dt><dd>$29 once, three Macs, every 1.x update</dd></div>
-                <div><dt>Free forever</dt><dd>Toggles, Window Manager, Browser Picker</dd></div>
-                <div><dt>Trial</dt><dd>14 days, no card needed</dd></div>
-                <div><dt>Status</dt><dd><span class="status soon">Paused before launch</span></dd></div>
-              </dl>
+              <h3 id="vista-title">Your eyes and your back, kept honest.</h3>
+              <p>Two break rhythms on separate clocks: 20-20-20 for your eyes, up and moving every 45 minutes. Vista holds a break while you're in a call, busy in your calendar or mid-sentence, then lands it at a good moment with your desktop blurred behind one simple thing to follow.</p>
+              <ul class="facts-mini"><li><span>Runs on</span> macOS 15+</li></ul>
               <div class="product-actions">
-                <a class="btn btn-solid" href="https://hutch.coursion.studio/#early-access">Join the early access list</a>
-                <a class="btn btn-line" href="https://hutch.coursion.studio">Take the tour <svg aria-hidden="true"><use href="#i-out"/></svg></a>
+                <a class="btn btn-solid" href="https://vista.coursion.studio">See how it works <svg aria-hidden="true"><use href="#i-out"/></svg></a>
               </div>
             </div>
-            <figure class="shot small">
-              <img src="assets/shots/hutch-pounce.webp" width="800" height="480" loading="lazy" decoding="async" alt="Hutch's Pounce launcher listing its search scopes: Apps, Files, Clipboard, Windows, Toggles, Actions, Shortcuts and Scripts." />
-            </figure>
+            <div class="stage" data-stage>
+              <p class="desk-caption" aria-live="off"><span data-cap-dots aria-hidden="true"></span><span data-cap-text></span></p>
+              <div class="scene is-on" data-demo="vista" data-kind="mac" aria-hidden="true"></div>
+            </div>
           </div>
         </article>
 
@@ -246,65 +303,16 @@
               </div>
               <h3 id="cue-title">A terminal that doesn't feel like one.</h3>
               <p>Type into a real input bar and every command comes back as its own card, with its exit code and timing. A ⌘K palette and a Quick Terminal from anywhere, project tasks and git that follow the folder you're in, long output folded away, and your own Claude one keystroke away when a command fails.</p>
-              <dl class="facts">
-                <div><dt>Price</dt><dd>Free, no account</dd></div>
-                <div><dt>Runs on</dt><dd>macOS 15+, Apple silicon</dd></div>
-              </dl>
+              <ul class="facts-mini"><li><span>Price</span> Free, no account</li><li><span>Runs on</span> macOS 15+, Apple silicon</li></ul>
               <div class="product-actions">
                 <a class="btn btn-solid" href="https://github.com/Coursion-Studio/cue/releases/latest/download/Cue.dmg"><svg aria-hidden="true"><use href="#i-down"/></svg> Download for Mac</a>
                 <a class="btn btn-line" href="https://cue.coursion.studio">Visit the site <svg aria-hidden="true"><use href="#i-out"/></svg></a>
               </div>
             </div>
-            <figure class="shot">
-              <img src="assets/shots/cue.webp" width="1600" height="1044" loading="lazy" decoding="async" alt="Cue's window: a project sidebar, git status, ls and a failing make test shown as separate command cards, and the input bar offering to explain the failure." />
-            </figure>
-          </div>
-        </article>
-
-        <article class="product product-dpm flip" id="dpm" aria-labelledby="dpm-title">
-          <div class="product-grid">
-            <div class="product-copy">
-              <div class="product-id">
-                <img src="assets/icons/dpm.webp" alt="" width="56" height="56" />
-                <div><div class="name">Device Performance Monitor</div><div class="kind">Mobile profiling for macOS</div></div>
-              </div>
-              <h3 id="dpm-title">See what your app does to a phone.</h3>
-              <p>Watch one app's memory, CPU, threads and frame rate live on an Android phone, the iOS Simulator or a real iPhone. Then let an AI read the session, or reach for bundle size, startup timing, a jank timeline and a <code>dpm</code> command line for CI.</p>
-              <dl class="facts">
-                <div><dt>Price</dt><dd>Free</dd></div>
-                <div><dt>Runs on</dt><dd>macOS 14+, Apple silicon and Intel</dd></div>
-              </dl>
-              <div class="product-actions">
-                <a class="btn btn-solid" href="https://github.com/Coursion-Studio/device-performance-monitor-website/releases/latest"><svg aria-hidden="true"><use href="#i-down"/></svg> Download for Mac</a>
-                <a class="btn btn-line" href="https://dpm.coursion.studio">Visit the site <svg aria-hidden="true"><use href="#i-out"/></svg></a>
-              </div>
+            <div class="stage" data-stage>
+              <p class="desk-caption" aria-live="off"><span data-cap-dots aria-hidden="true"></span><span data-cap-text></span></p>
+              <div class="scene is-on" data-demo="cue" data-kind="mac" aria-hidden="true"></div>
             </div>
-            <figure class="shot">
-              <img src="assets/shots/dpm.webp" width="1600" height="851" loading="lazy" decoding="async" alt="Device Performance Monitor charting an iOS Simulator app's memory and CPU over time, with app memory, CPU, thread count and session change at the top." />
-            </figure>
-          </div>
-        </article>
-
-        <article class="product product-vista" id="vista" aria-labelledby="vista-title">
-          <div class="product-grid">
-            <div class="product-copy">
-              <div class="product-id">
-                <img src="assets/icons/vista.webp" alt="" width="56" height="56" />
-                <div><div class="name">Vista</div><div class="kind">Breaks for macOS</div></div>
-              </div>
-              <h3 id="vista-title">Your eyes and your back, kept honest.</h3>
-              <p>Two break rhythms on separate clocks: 20-20-20 for your eyes, up and moving every 45 minutes. Vista holds a break while you're in a call, busy in your calendar or mid-sentence, then lands it at a good moment with your desktop blurred behind one simple thing to follow.</p>
-              <dl class="facts">
-                <div><dt>Runs on</dt><dd>macOS 15+</dd></div>
-                <div><dt>Status</dt><dd><span class="status soon">Coming soon</span></dd></div>
-              </dl>
-              <div class="product-actions">
-                <a class="btn btn-solid" href="https://vista.coursion.studio">See how it works <svg aria-hidden="true"><use href="#i-out"/></svg></a>
-              </div>
-            </div>
-            <figure class="shot small">
-              <img src="assets/shots/vista.webp" width="1000" height="660" loading="lazy" decoding="async" alt="Vista's two break clocks: an eye break in 38 seconds and a move break in 12 minutes, with presets Balanced, Deep focus, Eye care and Wellness." />
-            </figure>
           </div>
         </article>
       </section>
@@ -316,7 +324,11 @@
         </div>
 
         <div class="phones">
-          <article class="phone-app" id="sage" style="--c:#3ddc97">
+          <article class="phone-app has-stage" id="sage" style="--c:#3ddc97">
+            <div class="stage stage-phone" data-stage>
+              <p class="desk-caption" aria-live="off"><span data-cap-dots aria-hidden="true"></span><span data-cap-text></span></p>
+              <div class="scene is-on" data-demo="sage" data-kind="phone" aria-hidden="true"></div>
+            </div>
             <img src="assets/icons/sage.webp" alt="" width="88" height="88" loading="lazy" />
             <div>
               <div class="top"><h3>Sage</h3><span class="cat">iOS · Health</span></div>
@@ -325,7 +337,11 @@
             </div>
           </article>
 
-          <article class="phone-app" id="noty" style="--c:#ffb547">
+          <article class="phone-app has-stage" id="noty" style="--c:#ffb547">
+            <div class="stage stage-phone" data-stage>
+              <p class="desk-caption" aria-live="off"><span data-cap-dots aria-hidden="true"></span><span data-cap-text></span></p>
+              <div class="scene is-on" data-demo="noty" data-kind="phone" aria-hidden="true"></div>
+            </div>
             <img src="assets/icons/noty.webp" alt="" width="88" height="88" loading="lazy" />
             <div>
               <div class="top"><h3>Noty</h3><span class="cat">iOS · Productivity</span></div>
@@ -403,12 +419,134 @@
     </div>
   </footer>
 
+  <script src="demos/demo.js?v=3"></script>
+  <script src="demos/foyer.js?v=3"></script>
+  <script src="demos/knack.js?v=2"></script>
+  <script src="demos/aistats.js?v=2"></script>
+  <script src="demos/hutch.js?v=2"></script>
+  <script src="demos/cue.js?v=2"></script>
+  <script src="demos/dpm.js?v=2"></script>
+  <script src="demos/vista.js?v=3"></script>
+  <script src="demos/sage.js?v=2"></script>
+  <script src="demos/noty.js?v=2"></script>
   <script>
     (function () {
       var head = document.querySelector(".site-head");
       function onScroll() { head.classList.toggle("scrolled", window.scrollY > 8); }
       onScroll();
       window.addEventListener("scroll", onScroll, { passive: true });
+    })();
+    (function () {
+      var desk = document.querySelector("[data-desk]");
+      if (!desk || !window.Demos) return;
+      var items = Array.prototype.slice.call(desk.querySelectorAll(".dock a"));
+      var wins = desk.querySelectorAll("[data-win]");
+      var cap = desk.querySelector(".desk-caption");
+      var name = desk.querySelector("[data-desk-name]");
+      var what = desk.querySelector("[data-desk-what]");
+      var status = desk.querySelector("[data-desk-status]");
+      var more = desk.querySelector("[data-desk-more]");
+      var logo = desk.querySelector("[data-desk-logo]");
+      var aboutEl = desk.querySelector("[data-desk-about]");
+      var still = /[?&]static\b/.test(location.search) || window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      var current = 0;
+      var touring = true;
+      var hovering = false;
+      var visible = false;
+
+      function select(i) {
+        current = (i + items.length) % items.length;
+        var a = items[current];
+        items.forEach(function (el) { el.setAttribute("aria-current", el === a ? "true" : "false"); });
+        Array.prototype.forEach.call(wins, function (w) { w.classList.toggle("is-on", w.getAttribute("data-win") === a.dataset.app); });
+        desk.style.setProperty("--c", a.style.getPropertyValue("--c"));
+        name.textContent = a.dataset.name;
+        what.textContent = a.dataset.what;
+        status.textContent = a.dataset.status;
+        more.setAttribute("href", a.getAttribute("href"));
+        logo.src = a.querySelector("img").src;
+        aboutEl.textContent = a.dataset.about;
+      }
+
+      function play() {
+        var scene = desk.querySelector('[data-win="' + items[current].dataset.app + '"]');
+        if (still) return Demos.play(scene, cap, { still: true });
+        if (!visible) return Demos.stop(scene.parentElement);
+        Demos.play(scene, cap, touring ? { onDone: advance } : null);
+      }
+
+      function advance() {
+        if (!hovering) {
+          if (current === items.length - 1) touring = false;
+          select(current + 1);
+        }
+        play();
+      }
+
+      function choose(i) {
+        touring = false;
+        select(i);
+        play();
+      }
+
+      items.forEach(function (a, i) {
+        a.addEventListener("click", function (e) {
+          if (i === current && !touring) return;
+          e.preventDefault();
+          choose(i);
+        });
+        a.addEventListener("keydown", function (e) {
+          var step = e.key === "ArrowRight" ? 1 : e.key === "ArrowLeft" ? -1 : 0;
+          if (!step) return;
+          e.preventDefault();
+          choose(current + step);
+          items[current].focus();
+        });
+      });
+
+      desk.addEventListener("mouseenter", function () { hovering = true; });
+      desk.addEventListener("mouseleave", function () { hovering = false; });
+
+      Demos.mountAll();
+      var pick = (location.search.match(/[?&]demo=([a-z]+)/) || [])[1];
+      var start = items.findIndex(function (a) { return a.dataset.app === pick; });
+      if (start > 0 || pick) touring = start < 0;
+      select(Math.max(start, 0));
+      if (still || !("IntersectionObserver" in window)) { visible = true; play(); return; }
+      new IntersectionObserver(function (entries) {
+        var was = visible;
+        visible = entries[0].isIntersecting;
+        if (visible !== was) play();
+      }, { threshold: 0.3 }).observe(desk);
+    })();
+    (function () {
+      if (!window.Demos || !("IntersectionObserver" in window)) return;
+      var stages = Array.prototype.slice.call(document.querySelectorAll("[data-stage]"));
+      var still = /[?&]static\b/.test(location.search) || window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      var ratios = new Map();
+      var active = null;
+      function scene(st) { return st.querySelector(".scene"); }
+      function cap(st) { return st.querySelector(".desk-caption"); }
+      stages.forEach(function (st) {
+        if (still) Demos.play(scene(st), null, { still: true });
+      });
+      if (still) return;
+      function pick() {
+        var best = null, bestR = 0.55;
+        ratios.forEach(function (r, st) { if (r > bestR) { best = st; bestR = r; } });
+        if (best === active) return;
+        if (active) { Demos.stop(active); cap(active).style.opacity = "0"; }
+        active = best;
+        if (active) Demos.play(scene(active), cap(active));
+      }
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) { ratios.set(e.target, e.intersectionRatio); });
+        pick();
+      }, { threshold: [0, 0.25, 0.55, 0.75, 1] });
+      stages.forEach(function (st) {
+        Demos.play(scene(st), null, { still: true });
+        io.observe(st);
+      });
     })();
   </script>
 </body>
